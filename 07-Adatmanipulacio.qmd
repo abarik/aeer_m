@@ -1,0 +1,106 @@
+# Adatmanipuláció {#sec-adatmanipulacio}
+
+```{r}
+#| results: "asis"
+#| echo: false
+source("_common.R")
+```
+
+
+## Adatkezelés az *Alap R*-ben 🙂 {#sec-adatkezeles-alap-r}
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+1. A `survey` adattáblában a `Height` változó hiányzó értékeit helyettesítsük a változó mediánjával!
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+2. A `survey` adattáblában számoljuk a BMI értéket, majd alakítsuk át kategorikus változóvá!
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+3. A fejezetben névtelen függvény megadására használtuk a `\(x)` szintaxist. Járjunk utána a `\(x)` és a `function(x)` közötti különbségnek! Melyik esetben használható a `\(x)` szintaxis?
+:::
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+4. A `HSAUR3::Forbes2000` adattáblája 2000 vállalat adatát tartalmazza! Határozzuk meg a magyar cégek nevét és helyezését (`country` oszlop alapján)! Írassuk ki a képernyőre a 10 legnagyobb piaci értékkel (`marketvalue` oszlop) rendelkező cég nevét és piaci értékét! Határozzuk meg a legkisebb profittal (`profits` oszlop) rendelkező 5 cég minden adatát! Határozzuk meg a legnagyobb profittal (`profits` oszlop) rendelkező 10 amerikai vagy japán cég nevét, országát és profitját!
+:::
+
+## Adatkezelés *Tidyverse R*-ben 🤔 {#sec-adatkezeles-tidy}
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+1. A `survey` adattáblában a `Height` változó hiányzó értékeit helyettesítsük a változó mediánjával! Használjuk a *Tidyverse R* eszközeit! Vessük össze az *Alap R*-beli megoldással! Mi a véleményünk a két megoldásról, az olvashatóság és karbantarthatóság szempontjából?
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+2. A `survey` adattáblában számoljuk a BMI értéket, majd alakítsuk át kategorikus változóvá! Használjuk a *Tidyverse R* eszközeit!
+:::
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+3. A `HSAUR3::Forbes2000` adattáblája 2000 vállalat adatát tartalmazza! Határozzuk meg a magyar cégek nevét és helyezését (`country` oszlop alapján)! Írassuk ki a képernyőre a 10 legnagyobb piaci értékkel (`marketvalue` oszlop) rendelkező cég nevét és piaci értékét! Határozzuk meg a legkisebb profittal (`profits` oszlop) rendelkező 5 cég minden adatát! Határozzuk meg a legnagyobb profittal (`profits` oszlop) rendelkező 10 amerikai vagy japán cég nevét, országát és profitját! Használjuk a *Tidyverse R* eszközeit!
+:::
+
+## Haladó adatkezelés 🤯 {#sec-halado-adatkezeles}
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+1. Az adattáblák összekapcsolásánál a `left_join()` függvény helyett használhatjuk a `right_join()` függvényt is. Mi a különbség a két függvény között? Milyen esetben használjuk az `inner_join()` függvényt? Ha eltér a két összekapcsolandó adattábla azonosítójának neve, akkor hogyan tudjuk összekapcsolni őket?
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+2. A `{tidyr}` csomag `gapminder` adattáblája hosszú formátumban tárolja az egyes kontinensekre vonatkozó népességadatokat, különböző évekre vonatkozóan. Készítsünk egy széles formátumú adattáblát, amelyben az egyes évek -- egy "Y" előtaggal -- az oszlopok nevei lesznek! Végezzük el ennek a hosszú formátumra alakítását is!
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+3. Három személy 3 napos tréningen vesz részt, amelynek része egy speciális IQ teszt és kreativitás teszt kitöltése a tréning minden napján. Az adatokat a lenti táblázatnak megfelelően rögzítsük rövid formátumban. Alakítsuk át az adattáblát hosszú formátumúvá!
+
+| Id | 1.nap, IQ | 1.nap, KREAT | 2.nap, IQ | 2.nap, KREAT | 3.nap, IQ | 3.nap, KREAT |
+|----|-----------|--------------|-----------|--------------|-----------|--------------|
+| 1  | 8         | 12           | 10        | 8            | 13        | 6            |
+| 2  | 12        | 10           | 12        | 9            | 7         | 12           |
+| 3  | 9         | 7            | 12        | 10           | 12        | 8            |
+
+:::
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+
+4. Három személy 3 napos tréningen vesz részt, amelynek része egy speciális IQ teszt és kreativitás teszt kitöltése a tréning minden napján. Az adatokat a lenti táblázatnak megfelelően rögzítsük hosszú formátumban. Alakítsuk át az adattáblát széles formátumúvá!
+
+| Id | Tréning | Teszt | Eredmény |
+|----|---------|-------|----------|
+| 1  | 1.nap   | IQ    | 8        |
+| 1  | 1.nap   | KREAT | 9        |
+| 2  | 1.nap   | IQ    | 12       |
+| 2  | 1.nap   | KREAT | 5        |
+| 3  | 1.nap   | IQ    | 9        |
+| 3  | 1.nap   | KREAT | 11       |
+| 1  | 2.nap   | IQ    | 11       |
+| 1  | 2.nap   | KREAT | 12       |
+| 2  | 2.nap   | IQ    | 11       |
+| 2  | 2.nap   | KREAT | 9        |
+| 3  | 2.nap   | IQ    | 11       |
+| 3  | 2.nap   | KREAT | 10       |
+| 1  | 3.nap   | IQ    | 10       |
+| 1  | 3.nap   | KREAT | 11       |
+| 2  | 3.nap   | IQ    | 9        |
+| 2  | 3.nap   | KREAT | 11       |
+| 3  | 3.nap   | IQ    | 7        |
+| 3  | 3.nap   | KREAT | 12       |
+
+:::
+

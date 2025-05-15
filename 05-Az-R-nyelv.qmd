@@ -1,0 +1,452 @@
+# Az R nyelv {#sec-az-r-nyelv}
+
+```{r}
+#| results: "asis"
+#| echo: false
+source("_common.R")
+```
+
+## Adatobjektumok 🙂 {#sec-adatobjektumok}
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+1. Gondoljuk át, mi lehet a következő algebrai kifejezés eredménye, majd ellenőrizzük R-ben is: $8/2(2+2)$.
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+2. Gondoljuk át, hogy a `.342e1` név miért nem lehet érvényes objektumnév? Próbáljuk ki a `make.names(".342e1")` parancsot, majd tanulmányozzuk a `?make.names` leírást!
+:::
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+3. Magyarázzuk meg a `make.names(c("", "", ""))` és a `make.names(c("", "", ""), unique = T)` parancsok közötti különbséget!
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+4. Gondoljuk át, hogy egy parancsállomány mely pontjain érdemes feltétlenül megjegyzéseket használni!
+:::
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+5. Jelentősen segíthetjük a navigációt az *RStudio* parancsállományaiban, ha bizonyos megjegyzések végére ezt írjuk: ` ----` (szóköz és négy mínusz jel). Hogyan használhatjuk ezt a lehetőséget az *RStudio*-ban, és milyen előnyei vannak?
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+6. Az *RStudio*-ban parancsállomány (`.R`) szerkesztése közben próbáljuk ki a {{< kbd Ctrl-Alt-R >}} billentyűparancsot, és a hozzá kapcsolódó {{< kbd Shift-Alt-J >}} billentyűparancsot is. Mi a jelentése az {{< kbd Alt-L >}}, {{< kbd Shift-Alt-L >}}, {{< kbd Alt-O >}} és {{< kbd Shift-Alt-O >}} billentyűparancsoknak? A most megismert funkciók hogyan válthatók ki *Quarto* (`.qmd`) állomány szerkesztése közben?
+:::
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+7. Vizsgáljuk meg ennek a három kifejezésnek az értékét: `2**3**4`, `(2**3)**4` és `2**(3**4)`. Miért van különbség? Mi okozza a különbséget?
+:::
+
+## Függvények 🙂 {#sec-fuggvenyek}
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+1. Tekintsük át az [-@tbl-matfuggvenyek]. táblázat utolsó oszlopában szereplő R függvényeket. Próbáljuk megjósolni a függvények visszatérési értékét. Végezzünk ellenőrzést: gépeljük be, és hajtsuk végre a matematikai függvényeket! Egészítsük ki a begépelt matematikai függvényeket az argumentumok nevével, mindegyik argumentumnak adjunk nevet az [-@tbl-matfuggvenyek]. táblázat első oszlopa alapján! 
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+2. Az előző feladatban a matematikai függvények gépelése során milyen *RStudio* kényelmi funkciókat fedeztünk fel. Soroljunk fel legalább hármat!
+:::
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+3. Az aranymetszés arányait tartalmazó épületek, képzőművészeti alkotások máig nagy esztétikai értékkel bírnak. Határozzuk meg ezt az arányt a $\phi=\frac{1+\sqrt{5}}{2}$ képlet segítségével! Egy A/4-es oldalra kb. 47 sort írhatunk 12-es betűmérettel, és kb. 35 sort 16-os betűmérettel. Egy üres lap hányadik sorába írnánk címet 12-es és 16-os betűméret esetén, ha esztétikailag harmonikusan szeretnénk elhelyezni? Próbáljuk ki mindezt egy szövegszerkesztőben is!
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+4. A trigonometrikus függvények argumentumában radiánban kell megadni a szög értékét, és nem fokban. Ezt figyelembe véve határozzuk meg a 0, 30, 45, 60, 90 és 180 fok szinuszát, koszinuszát és tangensét!
+:::
+
+## Adatszerkezetek 🙂 {#sec-adatszerkezetek}
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+1. Mi a hasonlóság a következő három numerikus konstans között: `0xabc`, `2748`, `.2748e4`. 
+:::
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+2. Az R öt előre definiált konstanssal rendelkezik (`?Constants`). Írassuk ki ezek értékeit, állapítsuk meg típusukat!
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+3. Az aranymetszés arányszámát ($\phi=\frac{1+\sqrt{5}}{2}$) írassuk a konzolba legalább 8 tizedes pontossággal!
+:::
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+4. Az `r"(tetszőleges karakterek)"` formájú karakteres konstans megadásnak több változata is létezik, soroljunk fel még legalább öt lehetőséget (`?Quotes`)! Milyen előnyökkel rendelkezik ez a megadási forma az idézőjelek és a fordított perjel tekintetében? 
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+5. Helyezzünk el idézőjeleket karakteres konstansokban, mindhárom megadási forma mellett!
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+6. Próbáljuk ki az [-@tbl-karfuggvenyek]. táblázat karakterkezelő függvényeit! Gépeljük be az utolsó oszlopban lévő példákat, és vizsgáljuk meg a függvények visszatérési értékét.
+:::
+
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+7. Próbáljuk ki az [-@tbl-reloperatorok]. táblázat relációs operátorait! Gépeljük be a példákat és ellenőrizzük az eredményeket.
+:::
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+8. A logikai operátorok működéséről teljes képet kaphatunk az [-@tbl-logoperatorok]. táblázatból. Próbáljuk ki ezeket a parancsokat is!
+:::
+
+### Adatszerkezetek áttekintése
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+1. Próbáljuk ki az [-@tbl-adatszerkezetek]. táblázatban szereplő példákat. Hozzuk létre a különböző típusú objektumokat és vizsgáljuk meg a `typeof()` és `class()` függvényekkel az objektumok típusát.
+:::
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+2. Könyvünkben az elemi adattípusok között a *double*, *integer*, *karakteres* és *logikai* típusokat tárgyaljuk. Az R nyelvben azonban léteznek más típusú objektumok is. Melyek ezek?
+:::
+
+### Vektor
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+1. Hozzuk létre a következő numerikus vektort: 12, 14, 17.
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+2. Hozzuk létre a következő karakteres vektort: "Vác", "Eger", "Pécs".
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+3. Hozzuk létre a következő logikai vektort: TRUE, FALSE, FALSE.
+:::
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+4. Hozzuk létre egy számtani sorozat egymást követő elemeit, ahol az első elem 8, az utolsó 102 és a különbség 1.
+:::
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+5. Hozzuk létre egy számtani sorozat egymást követő elemeit, ahol az első elem 102, az utolsó 8 és a különbség -1.
+:::
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+6. Hozzuk létre egy számtani sorozat egymást követő elemeit, ahol az első elem 8, az utolsó 102 és a különbség 2.
+:::
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+7. Hozzuk létre egy számtani sorozat egymást követő elemeit, ahol az első elem 8, a különbség 3 és a vektor 25 elemű.
+:::
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+8. Hozzuk létre azt a numerikus vektort, amely 12 elemű, és minden elemének -2 az értéke!
+:::
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+9. Hozzuk létre azt a karakteres vektort, amely 7 elemű, és minden elemének "Péntek" az értéke!
+:::
+
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+10. Hozzuk létre azt a logikai vektort, amely 7 elemű, és minden elemének TRUE az értéke!
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+11. Hozzuk létre azt a numerikus vektort, amely a 2, 3, 5 elemeket háromszor egymás után megismétli! Hány elemű az így létrejött vektor?
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+12. Hozzuk létre azt a numerikus vektort, amely a 2, 3, 5 elemeket háromszor helyben megismétli! Hány elemű az így létrejött vektor?
+:::
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+13. Hozzuk létre azt a numerikus vektort, amely a 2, 3, 5 elemeket helyben megismétli úgy, hogy a 2-őt 4-szer, a 3-at 5-ször és az 5-öt 7-szer ismétli meg! Hány elemű az így létrejött vektor?
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+14. Szabályos vektorok létrehozásának van egy korábban még nem említett módja: a `sequence()` függvény. Ismerjük meg a súgóból ezt a függvényt, és értelmezzük a `sequence(4)` és `sequence(c(4,5))` függvényhívásokat!
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+15. Vektorok létrehozásának számos módját megismertük ebben a fejezetben, de elemek megadása nélkül, vagy akár nulla hosszúsággal is létrehozhatunk vektort. A `double()`, `integer()`, `character()` és `logical()` függvények közvetlenül az adott típusnak megfelelő vektort hozzák létre. A súgó tanulmányozásával állítsunk elő 0 és 10 elemű vektor objektumokat mind a négy típus esetén.
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+16. Próbáljuk ki az [-@tbl-statfuggvenyek]. táblázatban szereplő példákat.
+:::
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+17. Hozzuk létre a `'Peti'=5, 'Bori'=NA, 'Éva'=3, 'Pál'=NA, 'Gergő'=5, 'Ili'=4` adatokat tartalmazó vektort, majd rendezzük, indexeljük az első és az utolsó elemét, válogassuk le az 5-ös értékeket, csökkentsük mindegyik értéket 1-gyel, csak az 5-öket csökkentsük 1-gyel.
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+18. A fejezetben ismertetett `seq_along()` függvény mellett az `seq_len()` függvény is létezik, amely a megadott számú elemet tartalmazó vektort hoz létre. Milyen esetekben célszerű az `seq_len()` függvényt használni? 
+:::
+
+### Mátrix
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+1. Hozzunk létre egy csupa 1-ből álló mátrixot, amelynek 3 sora és 2 oszlopa van!
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+2. Hozzunk létre egy 3 $\times$ 4-es karakteres mátrixot, amely 12 különböző keresztnevet tartalmaz!
+:::
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+3. Hozzunk létre egy 3 $\times$ 4-es logikai mátrixot, amelynek 1. és 3. sora `TURE` a 2. sora pedig `FALSE` értékeket tartalmaz!
+:::
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+4. Mátrixok indexelésére olyan speciális indexmátrix is használható, amelynek két oszlopa van, és az elérendő elemek sor- és oszlopkoordinátáit tartalmazza. Mutassunk példát erre a `mátrix[indexmátrix]` alakú mátrixindexelésre!
+:::
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+5. A fejezetben megismert `apply()` mellett nagyon népszerű az `sapply()` és a `vapply()` függvény is, amelyek a mátrixokkal is használhatóak. Ismerjük meg ezeket a függvényeket a súgójukból, és próbáljuk ki őket!
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+6. Mit jelent egy mátrix transzponálása? Hogyan tudjuk ezt megtenni R-ben?
+:::
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+7. Hozzunk létre egy $3\times3$-as egységmátrixot! Keressünk rá a `diag()` függvényre, és nézzük meg, hogy mit csinál! Keressünk rá a mátrixokkal kapcsolatos szokásos műveletekre is! Hozzunk létre egy $3\times3$-as véletlen mátrixot! 
+:::
+
+### Faktor
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+1. Hozzuk létre azt a karakteres vektort, amely a "férfi", "nő" karakteres konstansokat, úgy helyezi el egymás mellett, hogy a 7 darab férfi érték után 13 db nő címke következik! Hány elemű az így létrejött vektor?
+:::
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+2. Egy vizsgálatban az első 10 személy neme "férfi", a többi 8 neme "nő" volt. Hozzuk létre azt a faktort, amely leírja a neme változót!
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+3. Egy vizsgálatban városi ("V") és falusi ("F") fiatalok vettek részt! A megkérdezettek településtípusa rendre a következő volt: F, F, V, F, V, V, V, F. Hozzuk létre azt a faktort, amely leírja a településtípus változót!
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+4. Egy vizsgálatban a dohányzási szokást egy kétértékű skálán mérték: 0-nem dohányzik; 1-dohányzik. A megkérdezettek dohányzási szokása a következő volt: 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0. Hozzuk létre azt a faktort, amely leírja a dohányzási szokás változót!
+:::
+
+### Lista {#sec-listadefalf}
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+1. Hozzunk létre egy háromelemű listát a TRUE, 12, és "Verseny" konstansokból!
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+2. Hozzunk létre egy háromelemű listát a TRUE, 12, és "Verseny" konstansokból, de gondoskodjunk az egyes elemek elnevezéséről, amelyek legyenek rendre: "befejezve", "indulok" és "leiras"!
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+3. Hozzunk létre egy háromelemű listát a TRUE, 12 és "Verseny" konstansokból, valamint az induló versenyzők végső pontszámaiból, amelyek rendre: 89, 78, 23, 67, 99, 69, 85, 77, 58, 72, 48, 81. Gondoskodjunk az egyes elemek elnevezéséről, amelyek legyenek rendre: "befejezve", "indulok", "leiras" és "pontszam"!
+:::
+
+### Adattábla {#sec-adattabla-alapok}
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+1. Hozzunk létre egy 30 $\times$ 3-as adattáblát, `csoport`, `matematika` és `magyar` oszlopnevekkel. A `csoport` változó legyen egy `5.a`, `5.b` és `5.c` címkéket tetszőleges sorrendben tartalmazó faktor, a `matematika` és a `magyar` pedig 1-5 osztályzatokat tartalmazó numerikus vektor.
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+2. Írassuk ki a `{MASS}` csomag `survey` adattáblájának 3. sorában az 5. oszlopban lévő értéket!
+:::
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+3. Írassuk ki a `{MASS}` csomag `survey` adattáblájának 3. és 6. sorában az 5. oszlopban lévő értékeket! Az adattábla típus maradjon meg!
+:::
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+4. Írassuk ki a `{MASS}` csomag `survey` adattáblájának 3. és 6. sorából az összes adatértéket!
+:::
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+5. Írassuk ki a `{MASS}` csomag `survey` adattábla `Pulse` oszlopát háromféle módszerrel! 
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+6. Írassuk ki a `{MASS}` csomag `survey` adattábla `Pulse` változójának első 3 elemét háromféle módszerrel!
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+7. A `{HSAUR3}` csomag `Forbes2000` adattáblája 2000 vállalat adatát tartalmazza! Határozzuk meg a magyar cégek nevét és helyezését (`country` oszlop alapján)! Írassuk ki a képernyőre a 10 legnagyobb piaci értékkel (`marketvalue` oszlop) rendelkező cég nevét és piaci értékét! Határozzuk meg a legkisebb profittal (`profits` oszlop) rendelkező 5 cég minden adatát! Határozzuk meg a legnagyobb profittal (`profits` oszlop) rendelkező 10 amerikai vagy japán cég nevét, országát és profitját!  
+:::
+
+## További adatszerkezetek 🤔 {#sec-tovabbi-adatszerkezetek}
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+1. Egy 30 fős osztályban a 13 fiúból 5 tanuló vett részt közlekedési versenyen, míg a lányok közül 8-an. Hozzuk létre e "nem" és "verseny" változók kapcsolatát leíró mátrixot, táblázatot és adattáblát is.
+:::
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+2. Konvertáljuk dátummá a következő két sztringet: `"6November2020"`, `"2013-02-29"`! Utóbbi esetben mi lehet a hiba oka?
+:::
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+3. A `seq()` függvény `from=` és `to=` argumentuma a dátum típusú objektumokkal is működik. A `by=` argumentum értéke ilyenkor lehet numerikus (ekkor napokat jelent), de lehet `x weeks`, `x months` vagy `x years`, ahol `x` nullánál nagyobb egész lehet. Hozzunk létre egy dátum-vektort 2020 összes hétfőjének dátumával! 
+:::
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+4. A Halley-üstökös utoljára 1986-ban járt a Naprendszerünkben, így az előrejelzések szerint legközelebb 2061. július 26-ban tér vissza. Rögzítsük ezt dátumként, és számoljuk ki, hány napot kell még várni az üstökös érkezésére.
+:::
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+5. Az `iris` adatbázishoz hasonlóan a `penguins` nevű adattábla egy könnyen kezelhető, tanulásra szánt új adatbázis az *Alap R*-ben, amely különböző pingvinfajok morfológiai adatait tartalmazza. Használjuk a `penguins` adatbázist a *Tidyverse R* függvényeivel és a pipe (`|>`) operátorral! A példák legyenek egyszerű, jól értelmezhető műveletek. A cél a gyakorlás, nem a statisztikai mélység!
+:::
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+6. Írassuk ki a munkaterület objektumait!
+:::
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+7. Hozzunk létre egy `pulzus` nevű objektumot és újra írassuk ki a munkaterület objektumneveit!
+:::
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+8. Távolítsuk el a `pulzus` objektumot a munkaterületről!
+:::
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+9. Határozzuk meg az aktuális munkakönyvtárat!
+:::
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+10. Növeljük meg a betűk méretét az *RGui*, az *R Commander* és az *RStudio* alkalmazásokban is!
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+11. Vizsgáljuk meg, hogy a számítógépünkön van-e telepítve a `{DescTools}` csomag, ha nincs telepítsük! Derítsük ki, hogy a `{DescTools}` csomagnak mi a célja? Soroljunk fel három függvényt és adattáblát ebből a csomagból! Távolítsuk el a memóriából a `{DescTools}` csomagot!
+:::
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+12. Telepítsük a számítógépünkre a következő csomagokat: `{HSAUR3}`, `{psych}`, `{prettyR}`, `{descr}` és `{pastecs}`!
+:::
+
+## Haladó nyelvi elemek 🤯 {#sec-halado-nyelvi-elemek}
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+1. Milyen szakkönyvekből tudnánk még jobban megismerni az R nyelv objektum-orientált programozási lehetőségeit?
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+2. Mutassunk példát arra, hogy a `class` attribútum hibás módosításával, hogyan tudunk kárt okozni faktor és adattábla adatszerkezetek esetén!
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+3. Hozzunk létre egy `osszeg` nevű osztályt numerikus vektorokhoz, amely a `print()` függvény hívásakor először kiírja az elemek összegét, majd a szokásos módon megjeleníti az objektum értékét is. Teszteljük az új osztályt!
+:::
+

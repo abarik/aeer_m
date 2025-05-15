@@ -1,0 +1,532 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Megoldások az aeer-hez",
+    "section": "",
+    "text": "Előszó\nEz a megoldásgyűjtemény az “Adatkezelés és egyváltozós elemzések R-ben”-ben c. könyvben megjelenő feladatok megoldásait tartalmazza. A könyv célja, hogy bemutassa az R programozási nyelvet és a statisztikai elemzésekhez szükséges alapvető ismereteket.",
+    "crumbs": [
+      "Előszó"
+    ]
+  },
+  {
+    "objectID": "01-Itt-kezdodik.html",
+    "href": "01-Itt-kezdodik.html",
+    "title": "1  Itt kezdődik",
+    "section": "",
+    "text": "1.1 Elindulás 🙂\nAz R könyvekkel kapcsolatban könnyen az lehet az érzésünk, hogy túl sok a könyv, és túl kevés az idő. Valóban tengernyi R könyv vásárolható meg, melyek többsége angol nyelvű. Elegendő a Springer Use R! könyvsorozatára gondolni, amely önmagában több mint 80 címet tartalmaz. Az Amazon-ról elérhető, 2020. januárja után megjelent könyvek száma is túl van a háromszázon.\nKülönösen értékesek lehetnek az online elérhető könyvek. Az idegen nyelvű könyvek tematikus gyűjteménye a Big Book of R, míg az R erőforrásokról saját listát is karbantartok.\nA magyar nyelvű könyvek közül külön is felsorolunk néhányat:",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Itt kezdődik</span>"
+    ]
+  },
+  {
+    "objectID": "01-Itt-kezdodik.html#sec-elindulas",
+    "href": "01-Itt-kezdodik.html#sec-elindulas",
+    "title": "1  Itt kezdődik",
+    "section": "",
+    "text": "🎯 Feladat\n\n\n\n\nMilyen online vagy nyomtat könyvek segítik az R elsajátítását? Próbáljuk összegyűjteni a magyar nyelvű könyveket is!\n\n\n\n\n\n\n\nReiczigel Jenő, Harnos Andrea, Solymosi Norbert (2021). Biostatisztika nem statisztikusoknak. Pars Kft., Nagykovácsi.\nDinya Elek, Solymosi Norbert (2016). Biometria a klinikumban 2. Feladatok megoldása R-környezetben. Medicina Kiadó.\nMünnich Ákos, Nagy Ágnes, Abari Kálmán. Többváltozós statisztika pszichológus hallgatók számára. Bölcsész Konzorcium, Debrecen, 2006. (http://psycho.unideb.hu/statisztika) ISBN 963 9704 04 0\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nTérképezzük fel az online videókurzusokat is az R tanulásához!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nAz ?exm-bevezeto-1. példa (Két tanítási módszer összehasonlítása) hipotézisvizsgálatának eredménye alapján adjunk szöveges értékelést!",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Itt kezdődik</span>"
+    ]
+  },
+  {
+    "objectID": "01-Itt-kezdodik.html#sec-konyv-felepitese",
+    "href": "01-Itt-kezdodik.html#sec-konyv-felepitese",
+    "title": "1  Itt kezdődik",
+    "section": "1.2 A könyv felépítése 🤔",
+    "text": "1.2 A könyv felépítése 🤔\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nAz adatfeldolgozás 4 lépése a következő: (1) adatok beolvasása, (2) adatok előkészítése elemzésre, (3) adatok elemzése és (4) az eredmények publikálása. A könyv mely fejezetei tartoznak az adatfeldolgozás fenti lépéseihez?\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nAz R-rel való munka általunk javasolt módja: RStudio-ban, projektmódban, R vagy Quarto állományokat szerkesztünk és hajtunk végre. Mely fejezetekben találunk hasznos információkat az R ezen használatával kapcsolatban?",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Itt kezdődik</span>"
+    ]
+  },
+  {
+    "objectID": "01-Itt-kezdodik.html#sec-probak-listaja",
+    "href": "01-Itt-kezdodik.html#sec-probak-listaja",
+    "title": "1  Itt kezdődik",
+    "section": "1.3 Próbák listája 🤯",
+    "text": "1.3 Próbák listája 🤯\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nMinden statisztikai próba esetében négy dolgot érdemes tudni: (1) a statisztikai próba neve, (2) null- és ellenhipotézise, (3) alkalmazási feltételei, és (4) a próba végrehajtásának módja valamely statisztikai programcsomagban. A 10. fejezetben a statisztikai próbák végrehajtását természetesen R-beli eszközökkel mutatjuk be. Ismerjük a fenti táblázatokban megnevezett próbák null- és ellenhipotézisét, valamint az alkalmazási feltételeit? Próbáljuk ezeket felidézni! Hol találunk ezekről információt?\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nMely próbák maradtak ki ebből a könyvből? Hol találunk ezek R-beli végrehajtására példát?",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Itt kezdődik</span>"
+    ]
+  },
+  {
+    "objectID": "02-Mi-az-R.html",
+    "href": "02-Mi-az-R.html",
+    "title": "2  Mi az R?",
+    "section": "",
+    "text": "2.1 Az R bemutatása 🙂",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Mi az R?</span>"
+    ]
+  },
+  {
+    "objectID": "02-Mi-az-R.html#sec-az-r-bemutatasa",
+    "href": "02-Mi-az-R.html#sec-az-r-bemutatasa",
+    "title": "2  Mi az R?",
+    "section": "",
+    "text": "🎯 Feladat\n\n\n\n\nKeressünk weboldalakat, amelyek az R előnyeit és hátrányait listázzák!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nKeressük meg, hogy az R optimális futtatásához, milyen hardver követelmények szükségesek!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nNézzünk utána, hogy ma kb. hány csomag érhető el az R-hez? Keressünk ábrát, amely bemutatja, hogy az évek során hány csomag volt elérhető az R-hez?\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nHol áll az R népszerűsége a többi programozási nyelvhez, illetve statisztikai programcsomaghoz képest?\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nMilyen ingyenesen elérhető, grafikus felhasználói felülettel rendelkező statisztikai programcsomagok építenek az R-re?\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nEmlítettük, hogy az adatelemezési munka nem igényli az R programozói fokú ismeretét, de soroljunk fel néhány könyvet, amelyből az R programozása is megtanulható!",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Mi az R?</span>"
+    ]
+  },
+  {
+    "objectID": "02-Mi-az-R.html#sec-modern-r",
+    "href": "02-Mi-az-R.html#sec-modern-r",
+    "title": "2  Mi az R?",
+    "section": "2.2 A modern R 🤔",
+    "text": "2.2 A modern R 🤔\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nKi Hadley Wickham?\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nMikor történt az egyik legjobb dolog az R-rel?",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Mi az R?</span>"
+    ]
+  },
+  {
+    "objectID": "02-Mi-az-R.html#sec-mult-es-jelen",
+    "href": "02-Mi-az-R.html#sec-mult-es-jelen",
+    "title": "2  Mi az R?",
+    "section": "2.3 Múlt és jelen 🤯",
+    "text": "2.3 Múlt és jelen 🤯\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nKeressünk olyan statisztikai jellegű témaköröket, amelyekben az R segítségünkre lehet?\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nKeressünk olyan nem-statisztikai jellegű témaköröket, amelyekben az R segítségünkre lehet?\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nNézzünk át néhány online elérhető R könyvet, és hasonlítsuk össze az R alaptudás egyes elemeivel! Melyek az átfedő részek, és hol vannak különbségek?\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nMelyek a fontosabb lépcsőfokok az R fejlődősében?",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Mi az R?</span>"
+    ]
+  },
+  {
+    "objectID": "03-Az-R-telepitese.html",
+    "href": "03-Az-R-telepitese.html",
+    "title": "3  Az R telepítése",
+    "section": "",
+    "text": "3.1 A fő komponensek telepítése 🙂",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Az R telepítése</span>"
+    ]
+  },
+  {
+    "objectID": "03-Az-R-telepitese.html#sec-fo-komponensek",
+    "href": "03-Az-R-telepitese.html#sec-fo-komponensek",
+    "title": "3  Az R telepítése",
+    "section": "",
+    "text": "🎯 Feladat\n\n\n\n\nMelyik az R legfrissebb változata, és milyen újdonságokat tartalmaz az előző változathoz képest?\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nMelyik az RStudio legfrissebb változata, és milyen újdonságokat tartalmaz az előző változathoz képest?\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nHogyan deríthető ki, hogy egy csomagban (például a {MASS}) csomagban, hány adatobjektum, és hány függvény található?",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Az R telepítése</span>"
+    ]
+  },
+  {
+    "objectID": "03-Az-R-telepitese.html#sec-tidyverse-r-telepitese",
+    "href": "03-Az-R-telepitese.html#sec-tidyverse-r-telepitese",
+    "title": "3  Az R telepítése",
+    "section": "3.2 A Tidyverse R telepítése 🤔",
+    "text": "3.2 A Tidyverse R telepítése 🤔\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nKeressünk rá a Tidyverse R csomagjaira, és próbáljuk kideríteni az egyes csomagok fő célját, alkalmazási területeit!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nDerítsük ki, hogy az R Core Team vagy Hadley Wickham több R csomag szerzője!",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Az R telepítése</span>"
+    ]
+  },
+  {
+    "objectID": "03-Az-R-telepitese.html#sec-r-frissitese",
+    "href": "03-Az-R-telepitese.html#sec-r-frissitese",
+    "title": "3  Az R telepítése",
+    "section": "3.3 Az R frissítése 🤯",
+    "text": "3.3 Az R frissítése 🤯\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nAz RStudio Tools/Check for Package Updates menüpontjával tájékozódjunk a telepített csomagjaink állapotáról. Végezzük el a szükséges frissítéseket! Mit tegyünk, ha nem sikerül valamelyik csomag telepítése?\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nIsmerjük meg a telepített csomagjaink számát és forrását (CRAN vagy Bioconductor vagy GitHub)!",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Az R telepítése</span>"
+    ]
+  },
+  {
+    "objectID": "04-Munka-az-R-ben.html",
+    "href": "04-Munka-az-R-ben.html",
+    "title": "4  Munka az R-ben",
+    "section": "",
+    "text": "4.1 Az RStudio használata 🙂",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Munka az R-ben</span>"
+    ]
+  },
+  {
+    "objectID": "04-Munka-az-R-ben.html#sec-az-rstudio-hasznalata",
+    "href": "04-Munka-az-R-ben.html#sec-az-rstudio-hasznalata",
+    "title": "4  Munka az R-ben",
+    "section": "",
+    "text": "🎯 Feladat\n\n\n\n\nBizonyosodjunk meg róla, hogy az alapvető szövegszerkesztési ismeretek birtokában vagyunk. Ismerjük az Insert billentyű funkcióját? Találjunk legalább 8 módszert, amely kizárólag a billentyű segítségével mozgatja a szövegkurzort! A szövegkijelölésnek milyen billentyűparancsait ismerjük? Milyen karaktertörlési lehetőségeket ismerünk? Ismerjük mindhárom vágóasztal-művelet billentyűparancsát?\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nAz RStudio mellett milyen más integrált fejlesztőeszközök léteznek az R-hez?\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nAz Appearance menüpont Editor theme beállításával változtassunk az RStudio színösszeállításán. Keressük meg a legjobban hozzánk illőt! Vegyük figyelembe, hogy hosszútávon a minél sötétebb háttér a jó választás.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Munka az R-ben</span>"
+    ]
+  },
+  {
+    "objectID": "04-Munka-az-R-ben.html#sec-segitseg-az-r-hez",
+    "href": "04-Munka-az-R-ben.html#sec-segitseg-az-r-hez",
+    "title": "4  Munka az R-ben",
+    "section": "4.2 Segítség az R használatához 🤔",
+    "text": "4.2 Segítség az R használatához 🤔\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nKeressünk magyar nyelvű leírásokat az R-hez!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nA közösségi médiában melyek az R legfontosabb fórumai?\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nHogyan indíthatjuk el egy csomag beépített súgóját? Ismerjük meg így a {fun} csomagot!",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Munka az R-ben</span>"
+    ]
+  },
+  {
+    "objectID": "04-Munka-az-R-ben.html#sec-alap-r-hasznalata",
+    "href": "04-Munka-az-R-ben.html#sec-alap-r-hasznalata",
+    "title": "4  Munka az R-ben",
+    "section": "4.3 Az Alap R használata 🤯",
+    "text": "4.3 Az Alap R használata 🤯\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nFoglaljuk össze az R használati módjait! Soroljuk fel mind a négy lehetőséget!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nHasonlítsuk össze a parancsállományok használatát RGui-ban és RStudio-ban!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nHasonlítsuk össze a parancsállományok és a Quarto / R Markdown használatát R Commander-ben és RStudio-ban!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nTöltsük le és telepítsük az ingyenesen elérhető jamovi és a JASP statisztikai programokat, majd nyissuk meg a beépített adatbázisait, és végezzünk néhány egyszerűbb elemzést! Ha elakadunk, keressünk videótutoriált az eszközök használatáról. Melyik eszköz tetszik jobban? Miben hasonlítanak és miben térnek el?",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Munka az R-ben</span>"
+    ]
+  },
+  {
+    "objectID": "05-Az-R-nyelv.html",
+    "href": "05-Az-R-nyelv.html",
+    "title": "5  Az R nyelv",
+    "section": "",
+    "text": "5.1 Adatobjektumok 🙂",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Az R nyelv</span>"
+    ]
+  },
+  {
+    "objectID": "05-Az-R-nyelv.html#sec-adatobjektumok",
+    "href": "05-Az-R-nyelv.html#sec-adatobjektumok",
+    "title": "5  Az R nyelv",
+    "section": "",
+    "text": "🎯 Feladat\n\n\n\n\nGondoljuk át, mi lehet a következő algebrai kifejezés eredménye, majd ellenőrizzük R-ben is: \\(8/2(2+2)\\).\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nGondoljuk át, hogy a .342e1 név miért nem lehet érvényes objektumnév? Próbáljuk ki a make.names(\".342e1\") parancsot, majd tanulmányozzuk a ?make.names leírást!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nMagyarázzuk meg a make.names(c(\"\", \"\", \"\")) és a make.names(c(\"\", \"\", \"\"), unique = T) parancsok közötti különbséget!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nGondoljuk át, hogy egy parancsállomány mely pontjain érdemes feltétlenül megjegyzéseket használni!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nJelentősen segíthetjük a navigációt az RStudio parancsállományaiban, ha bizonyos megjegyzések végére ezt írjuk: ---- (szóköz és négy mínusz jel). Hogyan használhatjuk ezt a lehetőséget az RStudio-ban, és milyen előnyei vannak?\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nAz RStudio-ban parancsállomány (.R) szerkesztése közben próbáljuk ki a Ctrl-Alt-RCtrl-Alt-R billentyűparancsot, és a hozzá kapcsolódó Shift-Alt-JShift-Alt-J billentyűparancsot is. Mi a jelentése az Alt-LAlt-L, Shift-Alt-LShift-Alt-L, Alt-OAlt-O és Shift-Alt-OShift-Alt-O billentyűparancsoknak? A most megismert funkciók hogyan válthatók ki Quarto (.qmd) állomány szerkesztése közben?\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nVizsgáljuk meg ennek a három kifejezésnek az értékét: 2**3**4, (2**3)**4 és 2**(3**4). Miért van különbség? Mi okozza a különbséget?",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Az R nyelv</span>"
+    ]
+  },
+  {
+    "objectID": "05-Az-R-nyelv.html#sec-fuggvenyek",
+    "href": "05-Az-R-nyelv.html#sec-fuggvenyek",
+    "title": "5  Az R nyelv",
+    "section": "5.2 Függvények 🙂",
+    "text": "5.2 Függvények 🙂\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nTekintsük át az ?tbl-matfuggvenyek. táblázat utolsó oszlopában szereplő R függvényeket. Próbáljuk megjósolni a függvények visszatérési értékét. Végezzünk ellenőrzést: gépeljük be, és hajtsuk végre a matematikai függvényeket! Egészítsük ki a begépelt matematikai függvényeket az argumentumok nevével, mindegyik argumentumnak adjunk nevet az ?tbl-matfuggvenyek. táblázat első oszlopa alapján!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nAz előző feladatban a matematikai függvények gépelése során milyen RStudio kényelmi funkciókat fedeztünk fel. Soroljunk fel legalább hármat!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nAz aranymetszés arányait tartalmazó épületek, képzőművészeti alkotások máig nagy esztétikai értékkel bírnak. Határozzuk meg ezt az arányt a \\(\\phi=\\frac{1+\\sqrt{5}}{2}\\) képlet segítségével! Egy A/4-es oldalra kb. 47 sort írhatunk 12-es betűmérettel, és kb. 35 sort 16-os betűmérettel. Egy üres lap hányadik sorába írnánk címet 12-es és 16-os betűméret esetén, ha esztétikailag harmonikusan szeretnénk elhelyezni? Próbáljuk ki mindezt egy szövegszerkesztőben is!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nA trigonometrikus függvények argumentumában radiánban kell megadni a szög értékét, és nem fokban. Ezt figyelembe véve határozzuk meg a 0, 30, 45, 60, 90 és 180 fok szinuszát, koszinuszát és tangensét!",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Az R nyelv</span>"
+    ]
+  },
+  {
+    "objectID": "05-Az-R-nyelv.html#sec-adatszerkezetek",
+    "href": "05-Az-R-nyelv.html#sec-adatszerkezetek",
+    "title": "5  Az R nyelv",
+    "section": "5.3 Adatszerkezetek 🙂",
+    "text": "5.3 Adatszerkezetek 🙂\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nMi a hasonlóság a következő három numerikus konstans között: 0xabc, 2748, .2748e4.\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nAz R öt előre definiált konstanssal rendelkezik (?Constants). Írassuk ki ezek értékeit, állapítsuk meg típusukat!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nAz aranymetszés arányszámát (\\(\\phi=\\frac{1+\\sqrt{5}}{2}\\)) írassuk a konzolba legalább 8 tizedes pontossággal!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nAz r\"(tetszőleges karakterek)\" formájú karakteres konstans megadásnak több változata is létezik, soroljunk fel még legalább öt lehetőséget (?Quotes)! Milyen előnyökkel rendelkezik ez a megadási forma az idézőjelek és a fordított perjel tekintetében?\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nHelyezzünk el idézőjeleket karakteres konstansokban, mindhárom megadási forma mellett!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nPróbáljuk ki az ?tbl-karfuggvenyek. táblázat karakterkezelő függvényeit! Gépeljük be az utolsó oszlopban lévő példákat, és vizsgáljuk meg a függvények visszatérési értékét.\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nPróbáljuk ki az ?tbl-reloperatorok. táblázat relációs operátorait! Gépeljük be a példákat és ellenőrizzük az eredményeket.\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nA logikai operátorok működéséről teljes képet kaphatunk az ?tbl-logoperatorok. táblázatból. Próbáljuk ki ezeket a parancsokat is!\n\n\n\n\n5.3.1 Adatszerkezetek áttekintése\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nPróbáljuk ki az ?tbl-adatszerkezetek. táblázatban szereplő példákat. Hozzuk létre a különböző típusú objektumokat és vizsgáljuk meg a typeof() és class() függvényekkel az objektumok típusát.\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nKönyvünkben az elemi adattípusok között a double, integer, karakteres és logikai típusokat tárgyaljuk. Az R nyelvben azonban léteznek más típusú objektumok is. Melyek ezek?\n\n\n\n\n\n5.3.2 Vektor\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nHozzuk létre a következő numerikus vektort: 12, 14, 17.\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nHozzuk létre a következő karakteres vektort: “Vác”, “Eger”, “Pécs”.\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nHozzuk létre a következő logikai vektort: TRUE, FALSE, FALSE.\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nHozzuk létre egy számtani sorozat egymást követő elemeit, ahol az első elem 8, az utolsó 102 és a különbség 1.\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nHozzuk létre egy számtani sorozat egymást követő elemeit, ahol az első elem 102, az utolsó 8 és a különbség -1.\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nHozzuk létre egy számtani sorozat egymást követő elemeit, ahol az első elem 8, az utolsó 102 és a különbség 2.\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nHozzuk létre egy számtani sorozat egymást követő elemeit, ahol az első elem 8, a különbség 3 és a vektor 25 elemű.\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nHozzuk létre azt a numerikus vektort, amely 12 elemű, és minden elemének -2 az értéke!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nHozzuk létre azt a karakteres vektort, amely 7 elemű, és minden elemének “Péntek” az értéke!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nHozzuk létre azt a logikai vektort, amely 7 elemű, és minden elemének TRUE az értéke!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nHozzuk létre azt a numerikus vektort, amely a 2, 3, 5 elemeket háromszor egymás után megismétli! Hány elemű az így létrejött vektor?\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nHozzuk létre azt a numerikus vektort, amely a 2, 3, 5 elemeket háromszor helyben megismétli! Hány elemű az így létrejött vektor?\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nHozzuk létre azt a numerikus vektort, amely a 2, 3, 5 elemeket helyben megismétli úgy, hogy a 2-őt 4-szer, a 3-at 5-ször és az 5-öt 7-szer ismétli meg! Hány elemű az így létrejött vektor?\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nSzabályos vektorok létrehozásának van egy korábban még nem említett módja: a sequence() függvény. Ismerjük meg a súgóból ezt a függvényt, és értelmezzük a sequence(4) és sequence(c(4,5)) függvényhívásokat!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nVektorok létrehozásának számos módját megismertük ebben a fejezetben, de elemek megadása nélkül, vagy akár nulla hosszúsággal is létrehozhatunk vektort. A double(), integer(), character() és logical() függvények közvetlenül az adott típusnak megfelelő vektort hozzák létre. A súgó tanulmányozásával állítsunk elő 0 és 10 elemű vektor objektumokat mind a négy típus esetén.\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nPróbáljuk ki az ?tbl-statfuggvenyek. táblázatban szereplő példákat.\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nHozzuk létre a 'Peti'=5, 'Bori'=NA, 'Éva'=3, 'Pál'=NA, 'Gergő'=5, 'Ili'=4 adatokat tartalmazó vektort, majd rendezzük, indexeljük az első és az utolsó elemét, válogassuk le az 5-ös értékeket, csökkentsük mindegyik értéket 1-gyel, csak az 5-öket csökkentsük 1-gyel.\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nA fejezetben ismertetett seq_along() függvény mellett az seq_len() függvény is létezik, amely a megadott számú elemet tartalmazó vektort hoz létre. Milyen esetekben célszerű az seq_len() függvényt használni?\n\n\n\n\n\n5.3.3 Mátrix\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nHozzunk létre egy csupa 1-ből álló mátrixot, amelynek 3 sora és 2 oszlopa van!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nHozzunk létre egy 3 \\(\\times\\) 4-es karakteres mátrixot, amely 12 különböző keresztnevet tartalmaz!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nHozzunk létre egy 3 \\(\\times\\) 4-es logikai mátrixot, amelynek 1. és 3. sora TURE a 2. sora pedig FALSE értékeket tartalmaz!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nMátrixok indexelésére olyan speciális indexmátrix is használható, amelynek két oszlopa van, és az elérendő elemek sor- és oszlopkoordinátáit tartalmazza. Mutassunk példát erre a mátrix[indexmátrix] alakú mátrixindexelésre!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nA fejezetben megismert apply() mellett nagyon népszerű az sapply() és a vapply() függvény is, amelyek a mátrixokkal is használhatóak. Ismerjük meg ezeket a függvényeket a súgójukból, és próbáljuk ki őket!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nMit jelent egy mátrix transzponálása? Hogyan tudjuk ezt megtenni R-ben?\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nHozzunk létre egy \\(3\\times3\\)-as egységmátrixot! Keressünk rá a diag() függvényre, és nézzük meg, hogy mit csinál! Keressünk rá a mátrixokkal kapcsolatos szokásos műveletekre is! Hozzunk létre egy \\(3\\times3\\)-as véletlen mátrixot!\n\n\n\n\n\n5.3.4 Faktor\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nHozzuk létre azt a karakteres vektort, amely a “férfi”, “nő” karakteres konstansokat, úgy helyezi el egymás mellett, hogy a 7 darab férfi érték után 13 db nő címke következik! Hány elemű az így létrejött vektor?\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nEgy vizsgálatban az első 10 személy neme “férfi”, a többi 8 neme “nő” volt. Hozzuk létre azt a faktort, amely leírja a neme változót!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nEgy vizsgálatban városi (“V”) és falusi (“F”) fiatalok vettek részt! A megkérdezettek településtípusa rendre a következő volt: F, F, V, F, V, V, V, F. Hozzuk létre azt a faktort, amely leírja a településtípus változót!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nEgy vizsgálatban a dohányzási szokást egy kétértékű skálán mérték: 0-nem dohányzik; 1-dohányzik. A megkérdezettek dohányzási szokása a következő volt: 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0. Hozzuk létre azt a faktort, amely leírja a dohányzási szokás változót!\n\n\n\n\n\n5.3.5 Lista\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nHozzunk létre egy háromelemű listát a TRUE, 12, és “Verseny” konstansokból!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nHozzunk létre egy háromelemű listát a TRUE, 12, és “Verseny” konstansokból, de gondoskodjunk az egyes elemek elnevezéséről, amelyek legyenek rendre: “befejezve”, “indulok” és “leiras”!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nHozzunk létre egy háromelemű listát a TRUE, 12 és “Verseny” konstansokból, valamint az induló versenyzők végső pontszámaiból, amelyek rendre: 89, 78, 23, 67, 99, 69, 85, 77, 58, 72, 48, 81. Gondoskodjunk az egyes elemek elnevezéséről, amelyek legyenek rendre: “befejezve”, “indulok”, “leiras” és “pontszam”!\n\n\n\n\n\n5.3.6 Adattábla\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nHozzunk létre egy 30 \\(\\times\\) 3-as adattáblát, csoport, matematika és magyar oszlopnevekkel. A csoport változó legyen egy 5.a, 5.b és 5.c címkéket tetszőleges sorrendben tartalmazó faktor, a matematika és a magyar pedig 1-5 osztályzatokat tartalmazó numerikus vektor.\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nÍrassuk ki a {MASS} csomag survey adattáblájának 3. sorában az 5. oszlopban lévő értéket!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nÍrassuk ki a {MASS} csomag survey adattáblájának 3. és 6. sorában az 5. oszlopban lévő értékeket! Az adattábla típus maradjon meg!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nÍrassuk ki a {MASS} csomag survey adattáblájának 3. és 6. sorából az összes adatértéket!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nÍrassuk ki a {MASS} csomag survey adattábla Pulse oszlopát háromféle módszerrel!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nÍrassuk ki a {MASS} csomag survey adattábla Pulse változójának első 3 elemét háromféle módszerrel!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nA {HSAUR3} csomag Forbes2000 adattáblája 2000 vállalat adatát tartalmazza! Határozzuk meg a magyar cégek nevét és helyezését (country oszlop alapján)! Írassuk ki a képernyőre a 10 legnagyobb piaci értékkel (marketvalue oszlop) rendelkező cég nevét és piaci értékét! Határozzuk meg a legkisebb profittal (profits oszlop) rendelkező 5 cég minden adatát! Határozzuk meg a legnagyobb profittal (profits oszlop) rendelkező 10 amerikai vagy japán cég nevét, országát és profitját!",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Az R nyelv</span>"
+    ]
+  },
+  {
+    "objectID": "05-Az-R-nyelv.html#sec-tovabbi-adatszerkezetek",
+    "href": "05-Az-R-nyelv.html#sec-tovabbi-adatszerkezetek",
+    "title": "5  Az R nyelv",
+    "section": "5.4 További adatszerkezetek 🤔",
+    "text": "5.4 További adatszerkezetek 🤔\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nEgy 30 fős osztályban a 13 fiúból 5 tanuló vett részt közlekedési versenyen, míg a lányok közül 8-an. Hozzuk létre e “nem” és “verseny” változók kapcsolatát leíró mátrixot, táblázatot és adattáblát is.\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nKonvertáljuk dátummá a következő két sztringet: \"6November2020\", \"2013-02-29\"! Utóbbi esetben mi lehet a hiba oka?\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nA seq() függvény from= és to= argumentuma a dátum típusú objektumokkal is működik. A by= argumentum értéke ilyenkor lehet numerikus (ekkor napokat jelent), de lehet x weeks, x months vagy x years, ahol x nullánál nagyobb egész lehet. Hozzunk létre egy dátum-vektort 2020 összes hétfőjének dátumával!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nA Halley-üstökös utoljára 1986-ban járt a Naprendszerünkben, így az előrejelzések szerint legközelebb 2061. július 26-ban tér vissza. Rögzítsük ezt dátumként, és számoljuk ki, hány napot kell még várni az üstökös érkezésére.\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nAz iris adatbázishoz hasonlóan a penguins nevű adattábla egy könnyen kezelhető, tanulásra szánt új adatbázis az Alap R-ben, amely különböző pingvinfajok morfológiai adatait tartalmazza. Használjuk a penguins adatbázist a Tidyverse R függvényeivel és a pipe (|&gt;) operátorral! A példák legyenek egyszerű, jól értelmezhető műveletek. A cél a gyakorlás, nem a statisztikai mélység!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nÍrassuk ki a munkaterület objektumait!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nHozzunk létre egy pulzus nevű objektumot és újra írassuk ki a munkaterület objektumneveit!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nTávolítsuk el a pulzus objektumot a munkaterületről!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nHatározzuk meg az aktuális munkakönyvtárat!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nNöveljük meg a betűk méretét az RGui, az R Commander és az RStudio alkalmazásokban is!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nVizsgáljuk meg, hogy a számítógépünkön van-e telepítve a {DescTools} csomag, ha nincs telepítsük! Derítsük ki, hogy a {DescTools} csomagnak mi a célja? Soroljunk fel három függvényt és adattáblát ebből a csomagból! Távolítsuk el a memóriából a {DescTools} csomagot!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nTelepítsük a számítógépünkre a következő csomagokat: {HSAUR3}, {psych}, {prettyR}, {descr} és {pastecs}!",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Az R nyelv</span>"
+    ]
+  },
+  {
+    "objectID": "05-Az-R-nyelv.html#sec-halado-nyelvi-elemek",
+    "href": "05-Az-R-nyelv.html#sec-halado-nyelvi-elemek",
+    "title": "5  Az R nyelv",
+    "section": "5.5 Haladó nyelvi elemek 🤯",
+    "text": "5.5 Haladó nyelvi elemek 🤯\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nMilyen szakkönyvekből tudnánk még jobban megismerni az R nyelv objektum-orientált programozási lehetőségeit?\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nMutassunk példát arra, hogy a class attribútum hibás módosításával, hogyan tudunk kárt okozni faktor és adattábla adatszerkezetek esetén!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nHozzunk létre egy osszeg nevű osztályt numerikus vektorokhoz, amely a print() függvény hívásakor először kiírja az elemek összegét, majd a szokásos módon megjeleníti az objektum értékét is. Teszteljük az új osztályt!",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Az R nyelv</span>"
+    ]
+  },
+  {
+    "objectID": "06-Beolvasas.html",
+    "href": "06-Beolvasas.html",
+    "title": "6  Beolvasás",
+    "section": "",
+    "text": "6.1 Alapvető formátumok 🙂",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Beolvasás</span>"
+    ]
+  },
+  {
+    "objectID": "06-Beolvasas.html#sec-alapveto-formatumok",
+    "href": "06-Beolvasas.html#sec-alapveto-formatumok",
+    "title": "6  Beolvasás",
+    "section": "",
+    "text": "🎯 Feladat\n\n\n\n\nOlvassuk be a leniency.xls Excel állományt, állapítsuk meg hány sora és oszlopa van.\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nOlvassuk be a socsupport.csv tagolt szöveges állományt, állapítsuk meg hány sora és oszlopa van.\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nOlvassuk be a tv.txt tagolt szöveges állományt, állapítsuk meg hány sora és oszlopa van.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Beolvasás</span>"
+    ]
+  },
+  {
+    "objectID": "06-Beolvasas.html#sec-tidy-inline",
+    "href": "06-Beolvasas.html#sec-tidy-inline",
+    "title": "6  Beolvasás",
+    "section": "6.2 A Tidyverse R és az inline beolvasás 🤔",
+    "text": "6.2 A Tidyverse R és az inline beolvasás 🤔\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nOlvassuk be a Tidyverse R segítségével a tv.txt tagolt szöveges állományt, állapítsuk meg hány sora és oszlopa van.\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nOlvassuk be Tidyverse R segítségével a socsupport.csv tagolt szöveges állományt, állapítsuk meg hány sora és oszlopa van.\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nOlvassuk be a Tidyverse R segítségével a leniency.xls Excel állományt, állapítsuk meg hány sora és oszlopa van.\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nRögzítsük a következő adatbázist inline módon legalább 3 módszerrel! Az adatbázis a magyar utónevek gyakorisági statisztikáját tartalmazza!\n\n\n\n\nev\nhelyezes\nnev\nnem\nelso\nmasodik\n\n\n\n\n2021\n1\nLevente\nfiú\n1332\n180\n\n\n2021\n2\nMáté\nfiú\n1314\n242\n\n\n2021\n3\nDominik\nfiú\n1289\n259\n\n\n2021\n1\nHanna\nlány\n1355\n336\n\n\n2021\n2\nZoé\nlány\n1138\n420\n\n\n2021\n3\nAnna\nlány\n1133\n500",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Beolvasás</span>"
+    ]
+  },
+  {
+    "objectID": "06-Beolvasas.html#sec-kiiras-es-mas",
+    "href": "06-Beolvasas.html#sec-kiiras-es-mas",
+    "title": "6  Beolvasás",
+    "section": "6.3 Kiírás és más lehetőségek 🤯",
+    "text": "6.3 Kiírás és más lehetőségek 🤯\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nA cat() függvénnyel a dput()-hoz hasonlóan szöveges állományba írhatjuk egy karakteres, numerikus vagy logikai vektor értékét. Mindkét függvénnyel végezzük el a kiírást, és vessük össze a kapott szöveges állományok tartalmát!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nA Kaggle egyik adatbázisában 4000 videójáték értékelése található. Töltsük le a CSV adatállományt, és nyissuk meg. Keressük meg az R-bloggers oldalon az adatállományhoz kapcsolódó cikket, és próbáljunk ki néhány elemző parancsot. A blogger melyik csomag, melyik függvényével végezte a beolvasást?\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nKeressük fel és tanulmányozzuk a Great R packages for data import, wrangling and visualization oldalt! A bevezetésben lefektetett alapelvek közül melyiket erősíti meg ez az oldal?\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nTöltsünk le 10 érdekesnek tűnő adatállományt a TidyTuesday - A weekly social data project in R oldalról, és nyissuk meg őket!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nTöltsük be az {Ecdat} csomagot, ha szükséges telepítsük! Vizsgáljuk meg az {Ecdat} csomag tartalmát, nevezzünk meg legalább 5 objektumot ebből a csomagból! Olvassuk be d2 néven az {Ecdat} csomag Diamond adattábláját! Kérjünk leírást erről az adattábláról!",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Beolvasás</span>"
+    ]
+  },
+  {
+    "objectID": "07-Adatmanipulacio.html",
+    "href": "07-Adatmanipulacio.html",
+    "title": "7  Adatmanipuláció",
+    "section": "",
+    "text": "7.1 Adatkezelés az Alap R-ben 🙂",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Adatmanipuláció</span>"
+    ]
+  },
+  {
+    "objectID": "07-Adatmanipulacio.html#sec-adatkezeles-alap-r",
+    "href": "07-Adatmanipulacio.html#sec-adatkezeles-alap-r",
+    "title": "7  Adatmanipuláció",
+    "section": "",
+    "text": "🎯 Feladat\n\n\n\n\nA survey adattáblában a Height változó hiányzó értékeit helyettesítsük a változó mediánjával!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nA survey adattáblában számoljuk a BMI értéket, majd alakítsuk át kategorikus változóvá!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nA fejezetben névtelen függvény megadására használtuk a \\(x) szintaxist. Járjunk utána a \\(x) és a function(x) közötti különbségnek! Melyik esetben használható a \\(x) szintaxis?\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nA HSAUR3::Forbes2000 adattáblája 2000 vállalat adatát tartalmazza! Határozzuk meg a magyar cégek nevét és helyezését (country oszlop alapján)! Írassuk ki a képernyőre a 10 legnagyobb piaci értékkel (marketvalue oszlop) rendelkező cég nevét és piaci értékét! Határozzuk meg a legkisebb profittal (profits oszlop) rendelkező 5 cég minden adatát! Határozzuk meg a legnagyobb profittal (profits oszlop) rendelkező 10 amerikai vagy japán cég nevét, országát és profitját!",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Adatmanipuláció</span>"
+    ]
+  },
+  {
+    "objectID": "07-Adatmanipulacio.html#sec-adatkezeles-tidy",
+    "href": "07-Adatmanipulacio.html#sec-adatkezeles-tidy",
+    "title": "7  Adatmanipuláció",
+    "section": "7.2 Adatkezelés Tidyverse R-ben 🤔",
+    "text": "7.2 Adatkezelés Tidyverse R-ben 🤔\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nA survey adattáblában a Height változó hiányzó értékeit helyettesítsük a változó mediánjával! Használjuk a Tidyverse R eszközeit! Vessük össze az Alap R-beli megoldással! Mi a véleményünk a két megoldásról, az olvashatóság és karbantarthatóság szempontjából?\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nA survey adattáblában számoljuk a BMI értéket, majd alakítsuk át kategorikus változóvá! Használjuk a Tidyverse R eszközeit!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nA HSAUR3::Forbes2000 adattáblája 2000 vállalat adatát tartalmazza! Határozzuk meg a magyar cégek nevét és helyezését (country oszlop alapján)! Írassuk ki a képernyőre a 10 legnagyobb piaci értékkel (marketvalue oszlop) rendelkező cég nevét és piaci értékét! Határozzuk meg a legkisebb profittal (profits oszlop) rendelkező 5 cég minden adatát! Határozzuk meg a legnagyobb profittal (profits oszlop) rendelkező 10 amerikai vagy japán cég nevét, országát és profitját! Használjuk a Tidyverse R eszközeit!",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Adatmanipuláció</span>"
+    ]
+  },
+  {
+    "objectID": "07-Adatmanipulacio.html#sec-halado-adatkezeles",
+    "href": "07-Adatmanipulacio.html#sec-halado-adatkezeles",
+    "title": "7  Adatmanipuláció",
+    "section": "7.3 Haladó adatkezelés 🤯",
+    "text": "7.3 Haladó adatkezelés 🤯\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nAz adattáblák összekapcsolásánál a left_join() függvény helyett használhatjuk a right_join() függvényt is. Mi a különbség a két függvény között? Milyen esetben használjuk az inner_join() függvényt? Ha eltér a két összekapcsolandó adattábla azonosítójának neve, akkor hogyan tudjuk összekapcsolni őket?\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nA {tidyr} csomag gapminder adattáblája hosszú formátumban tárolja az egyes kontinensekre vonatkozó népességadatokat, különböző évekre vonatkozóan. Készítsünk egy széles formátumú adattáblát, amelyben az egyes évek – egy “Y” előtaggal – az oszlopok nevei lesznek! Végezzük el ennek a hosszú formátumra alakítását is!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nHárom személy 3 napos tréningen vesz részt, amelynek része egy speciális IQ teszt és kreativitás teszt kitöltése a tréning minden napján. Az adatokat a lenti táblázatnak megfelelően rögzítsük rövid formátumban. Alakítsuk át az adattáblát hosszú formátumúvá!\n\n\n\n\n\n\n\n\n\n\n\n\n\nId\n1.nap, IQ\n1.nap, KREAT\n2.nap, IQ\n2.nap, KREAT\n3.nap, IQ\n3.nap, KREAT\n\n\n\n\n1\n8\n12\n10\n8\n13\n6\n\n\n2\n12\n10\n12\n9\n7\n12\n\n\n3\n9\n7\n12\n10\n12\n8\n\n\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nHárom személy 3 napos tréningen vesz részt, amelynek része egy speciális IQ teszt és kreativitás teszt kitöltése a tréning minden napján. Az adatokat a lenti táblázatnak megfelelően rögzítsük hosszú formátumban. Alakítsuk át az adattáblát széles formátumúvá!\n\n\n\n\nId\nTréning\nTeszt\nEredmény\n\n\n\n\n1\n1.nap\nIQ\n8\n\n\n1\n1.nap\nKREAT\n9\n\n\n2\n1.nap\nIQ\n12\n\n\n2\n1.nap\nKREAT\n5\n\n\n3\n1.nap\nIQ\n9\n\n\n3\n1.nap\nKREAT\n11\n\n\n1\n2.nap\nIQ\n11\n\n\n1\n2.nap\nKREAT\n12\n\n\n2\n2.nap\nIQ\n11\n\n\n2\n2.nap\nKREAT\n9\n\n\n3\n2.nap\nIQ\n11\n\n\n3\n2.nap\nKREAT\n10\n\n\n1\n3.nap\nIQ\n10\n\n\n1\n3.nap\nKREAT\n11\n\n\n2\n3.nap\nIQ\n9\n\n\n2\n3.nap\nKREAT\n11\n\n\n3\n3.nap\nIQ\n7\n\n\n3\n3.nap\nKREAT\n12",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Adatmanipuláció</span>"
+    ]
+  },
+  {
+    "objectID": "08-Mutatok-es-tablazatok.html",
+    "href": "08-Mutatok-es-tablazatok.html",
+    "title": "8  Mutatók és táblázatok",
+    "section": "",
+    "text": "8.1 Az Alap R lehetőségei 🙂",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Mutatók és táblázatok</span>"
+    ]
+  },
+  {
+    "objectID": "08-Mutatok-es-tablazatok.html#sec-alap-r-lehetosegei",
+    "href": "08-Mutatok-es-tablazatok.html#sec-alap-r-lehetosegei",
+    "title": "8  Mutatók és táblázatok",
+    "section": "",
+    "text": "🎯 Feladat\n\n\n\n\nKészítsen gyakorisági táblázatot a survey adattábla Smoke változójára!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nKészítsen gyakorisági táblázatot a survey adattábla Smoke és Sex változójára!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nHatározza meg a pulzus átlagát a survey adattábla Sex és Smoke változói szerint!",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Mutatók és táblázatok</span>"
+    ]
+  },
+  {
+    "objectID": "08-Mutatok-es-tablazatok.html#sec-tidyverse-r-lehetosegei",
+    "href": "08-Mutatok-es-tablazatok.html#sec-tidyverse-r-lehetosegei",
+    "title": "8  Mutatók és táblázatok",
+    "section": "8.2 A Tidyverse R lehetőségei 🤔",
+    "text": "8.2 A Tidyverse R lehetőségei 🤔\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nKészítsen gyakorisági táblázatot a survey adattábla Smoke változójára! Használja a Tidyverse R csomagjait!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nKészítsen gyakorisági táblázatot a survey adattábla Smoke és Sex változójára! Használja a Tidyverse R csomagjait!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nHatározza meg a pulzus átlagát a survey adattábla Sex és Smoke változói szerint! Használja a Tidyverse R csomagjait!",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Mutatók és táblázatok</span>"
+    ]
+  },
+  {
+    "objectID": "08-Mutatok-es-tablazatok.html#sec-halado-lehetosegek",
+    "href": "08-Mutatok-es-tablazatok.html#sec-halado-lehetosegek",
+    "title": "8  Mutatók és táblázatok",
+    "section": "8.3 Haladó lehetőségek 🤯",
+    "text": "8.3 Haladó lehetőségek 🤯\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nKészítsen gyakorisági táblázatot a survey adattábla Smoke változójára! Használja a {DescTools}, majd a {summarytools} csomagot!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nKészítsen gyakorisági táblázatot a survey adattábla Smoke és Sex változójára! Használja a {DescTools}, majd a {summarytools} csomagot!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nHatározza meg a pulzus átlagát a survey adattábla Sex és Smoke változói szerint! Használja a {psych}, {DescTools}, majd a {summarytools} csomagot!",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Mutatók és táblázatok</span>"
+    ]
+  },
+  {
+    "objectID": "09-Grafika.html",
+    "href": "09-Grafika.html",
+    "title": "9  Modern grafika",
+    "section": "",
+    "text": "9.1 A ggplot2 alapjai 🙂",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Modern grafika</span>"
+    ]
+  },
+  {
+    "objectID": "09-Grafika.html#sec-ggplot2-alapjai",
+    "href": "09-Grafika.html#sec-ggplot2-alapjai",
+    "title": "9  Modern grafika",
+    "section": "",
+    "text": "🎯 Feladat\n\n\n\n\nA ?exm-kerdoiv-1 példában 237 Ausztrál egyetemista adata szerepel. A kerdoiv.xlsx-ből elérhető adatokban megtalálható a Fold faktor és az Age numerikus változó. Megkérték az egyetemistákat, hogy kulcsolják össze a kezüket, majd lejegyezték a felül lévő kart. Így a Fold lehetséges értékei \"R on L\", \"L on R\", \"Neither\". Az Age változó az egyetemisták életkorát tartalmazza évben kifejezve. Vizsgáljuk meg mindkét változó eloszlását a szokásos módon. A faktor változót oszlopdiagrammal, a numerikus változót egydimenziós pontdiagrammal, dobozdiagrammal és hisztogrammal is.\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nMentsük el háttértárra PNG állományok formájában az előző feladat négy ábráját!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nAz 1. feladatban szereplő két változó (Fold és Age) eloszlását vizsgáljuk meg nemenként is! Továbbra is használjunk oszlopdiagramot, illetve egydimenziós pontdiagramot, dobozdiagramot és hisztogramot.\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nVizsgáljuk meg több módszerrel is, hogy az Age változó hisztogramjában milyen széles osztályintervallumokkal lenne érdemes dolgozni. Hívjuk segítségül az Alap R hist() függvényét.\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nEgyetlen ábrán jelenítsünk meg 3 db normális eloszláshoz tartozó sűrűségfüggvényt, melyek paraméterei: \\(\\mu_1=1, \\sigma_1=2\\); \\(\\mu_2=1, \\sigma_2=3\\); \\(\\mu_3=2, \\sigma_3=1\\).\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nMutassuk be a standard normális eloszlás és a t eloszlás kapcsolatát! Egy ábrán jelenítsük meg a standard normális eloszlás sűrűségfüggvényét és az 5, 10, 15, 20 és 25 szabadsági fokú t eloszlás sűrűségfüggvényét!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nJelenítsük meg az \\(n=50, p=1/3\\) paraméterű binomiális eloszlás eloszlását bemutató vonalas ábrát!",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Modern grafika</span>"
+    ]
+  },
+  {
+    "objectID": "09-Grafika.html#sec-szamitasok-abran",
+    "href": "09-Grafika.html#sec-szamitasok-abran",
+    "title": "9  Modern grafika",
+    "section": "9.2 Számítások az ábrán 🤔",
+    "text": "9.2 Számítások az ábrán 🤔\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nA ?exm-kerdoiv-1 példában 237 Ausztrál egyetemista adata szerepel. Olvassuk be a kerdoiv.xlsx állományt, majd hasonlítsuk össze az életkort tartalmazó Age változó eloszlását a normális eloszlással. Használjunk hisztogramot és simított hisztogramot is. Próbáljuk egyetlen ábrán elvégezni az összehasonlítást.\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nA ?exm-kerdoiv-1 példában a nem (Sex) és a kezesség (W.Hnd) faktorok kapcsolata 4 fajta kereszttáblával is vizsgálható: (1) gyakorisági, (2) teljes kereszttáblára vonatkozó százalékos relatív gyakorisági, (3) soronként vett százalékos relatív gyakorisági és (4) oszloponként vett százalékos relatív gyakorisági táblázattal. Mind a négy kétdimenziós gyakorisági táblázatnak rajzoljuk meg az oszlopdiagram megfelelőjét. Az egyes oszlopok feliratként a gyakorisági és a százalékos relatív gyakorisági értékeket is tartalmazzák. A soronként vagy oszloponként vett relatív gyakorisági táblázatokból készült ábrák létrehozásához használjuk a {GGally} csomag stat_prop() függvényét.",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Modern grafika</span>"
+    ]
+  },
+  {
+    "objectID": "09-Grafika.html#sec-abrak-testreszabasa",
+    "href": "09-Grafika.html#sec-abrak-testreszabasa",
+    "title": "9  Modern grafika",
+    "section": "9.3 Ábrák testreszabása 🤯",
+    "text": "9.3 Ábrák testreszabása 🤯\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nA ?fig-szinpaletta-kat-01. ábrán már használtuk az {RColorBrewer} csomag színpalettáját kategorikus változó esetén. Próbáljuk ki magunk is a ?fig-rcolorbrewer-01. ábrán felsorolt palettaneveket “Set3”-tól “Accent”-ig!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nA standard normális eloszlás és az 5, 10, 15 és 20 szabadsági fokú t-eloszás sűrűségfüggvényét jelenítsük meg egy-egy ábrán! A görbék megjelenítéséhez használjuk a stat_function() függvényt!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nMutassuk be az R hagyományos grafikus rendszerét!",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Modern grafika</span>"
+    ]
+  },
+  {
+    "objectID": "10-Hipotezisvizsgalatok.html",
+    "href": "10-Hipotezisvizsgalatok.html",
+    "title": "10  Hipotézisvizsgálatok",
+    "section": "",
+    "text": "10.1 Paraméteres próbák 🙂",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Hipotézisvizsgálatok</span>"
+    ]
+  },
+  {
+    "objectID": "10-Hipotezisvizsgalatok.html#sec-parameteres-probak",
+    "href": "10-Hipotezisvizsgalatok.html#sec-parameteres-probak",
+    "title": "10  Hipotézisvizsgálatok",
+    "section": "",
+    "text": "🎯 Feladat\n\n\n\n\nAz eddig ismertetett próbák közül az u-próba (z-próba) különböző változatai kimaradtak. A {DescTools} csomag ZTest() függvénye az egymintás, a kétmintás és a páros eseteket is képes kezelni. Adjunk példát ezekre a próbákra a ?ZTest tanulmányozása után!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nA kétmintás t-próba és az egyszempontos varianciaelemzés több alternatívája is elérhető a {onewaytests} csomagban. Ezen próbák null- és ellenhipotézise ugyanúgy a várható értékekre vonatkozik. Mutassunk példát ezekre az eljárásokra Dag és mtsai. (2018) alapján!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nA páros vizsgálatok elemzésére a {PairedData} csomagot használhatjuk. Mutassunk példát azokra a kényelmi lehetőségekre, amelyek az ábrák rajzolását támogatják!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nEgyszempontos varianciaelemzéshez több módszerrel is készíthetünk magyarázó átlagábrát. Foglaljuk össze az ismert eseteket és egészítsük ki a {PASWR2} csomag oneway.plots(), a {gplots} csomag plotmeans() és a {yarrr} csomag pirateplot() függvényével.\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nAz egyszerű lineáris regresszió alkalmazási feltételei nem merülnek ki a reziduumok normalitásában. Ismertessük a lehetséges további feltételeket, és azok R-beli vizsgálati lehetőségeit! Használjuk a TidyTuesday csokoládék kakaótartalmát tartalmazó adatbázisát. Mi a kakaótartalom és a csokoládé kedvelésének kapcsolata? Használjuk a beolvasásához a következő kódokat:\n\n\n# install.packages(\"tidytuesdayR\") # tidytuesdayR csomag telepítése\n# A TidyTuesday adatok letöltése a Github-ról\ntuesdata &lt;- tidytuesdayR::tt_load('2022-01-18', )\n# a két vizsgált oszlop leválogatása; tibble-ből data frame konverzió\nchocolate &lt;- as.data.frame(\n  tuesdata$chocolate[c(\"cocoa_percent\", \"rating\")])\n# a százalékjelet is tartalmazó kakaótartalom numerikussá alakítása\nchocolate$cocoa_percent &lt;- as.numeric(gsub(\"%\", \"\", \n                                           chocolate$cocoa_percent))",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Hipotézisvizsgálatok</span>"
+    ]
+  },
+  {
+    "objectID": "10-Hipotezisvizsgalatok.html#sec-nemparameteres-probak",
+    "href": "10-Hipotezisvizsgalatok.html#sec-nemparameteres-probak",
+    "title": "10  Hipotézisvizsgálatok",
+    "section": "10.2 Nemparaméteres próbák 🙂",
+    "text": "10.2 Nemparaméteres próbák 🙂\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nTöbb nemparaméteres próbát is használja a correct= és az exact= argumentumokkal. Tekintsük át ezek lehetséges értékeit az egyes függvények esetén. Nézzünk utána, hogy ezeket milyen körülmények között érdemes használni!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nMood medián-próba esetén a {RVAideMemoire} csomag mood.medtest() függvényét használtuk, de számos alternatívája létezik az R-ben. Melyek ezek?\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nA Kruskal–Wallis-próba utóvizsgálatára a Dunn-próbát használtuk, de számos alternatívája létezik az R-ben. Melyek ezek?\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nA Friedman-próba utóvizsgálatára a Nemenyi-próbát használtuk, de számos alternatívája létezik az R-ben. Melyek ezek?",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Hipotézisvizsgálatok</span>"
+    ]
+  },
+  {
+    "objectID": "10-Hipotezisvizsgalatok.html#sec-normalitas-vizsgalata",
+    "href": "10-Hipotezisvizsgalatok.html#sec-normalitas-vizsgalata",
+    "title": "10  Hipotézisvizsgálatok",
+    "section": "10.3 Normalitás vizsgálata 🙂",
+    "text": "10.3 Normalitás vizsgálata 🙂\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nTöbb kutató a normalitás vizsgálatának grafikus módszerét részesíti előnyben (QQ-ábra, hisztogram) a hipotézisvizsgálatokkal szemben. Keressen bizonyítékot ennek alátámasztására!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nGeneráljon normális adatokat az rnorm() és torzított eloszlásúakat az rexp() és rchisq() függvényekkel. Vizsgálja meg, mennyire érzékeny a Shapiro–-Wilk-próba a minta méretére!",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Hipotézisvizsgálatok</span>"
+    ]
+  },
+  {
+    "objectID": "10-Hipotezisvizsgalatok.html#sec-varianciara-vonatkozo-probak",
+    "href": "10-Hipotezisvizsgalatok.html#sec-varianciara-vonatkozo-probak",
+    "title": "10  Hipotézisvizsgálatok",
+    "section": "10.4 Varianciára vonatkozó próbák 🙂",
+    "text": "10.4 Varianciára vonatkozó próbák 🙂\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nA szóráshomogenitás (homoszkedaszticitás) vizsgálatára nem csak statisztikai próbák, hanem diagnosztikus ábrák is léteznek, amelyek vizuálisan segítik a szórásazonosság feltételezésének ellenőrzését. Melyek ezek?",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Hipotézisvizsgálatok</span>"
+    ]
+  },
+  {
+    "objectID": "10-Hipotezisvizsgalatok.html#sec-valoszinuseg-probai",
+    "href": "10-Hipotezisvizsgalatok.html#sec-valoszinuseg-probai",
+    "title": "10  Hipotézisvizsgálatok",
+    "section": "10.5 Valószínűség próbái 🙂",
+    "text": "10.5 Valószínűség próbái 🙂\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nA fejezetben használt teszteknek lehet alkalmazási feltétele. Soroljuk fel ezeket!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nA fejezetben ugyanannak a hipotézisnek a vizsgálatára több próbát is bemutattunk. Foglaljuk össze, hogy melyik próbát mikor érdemes használni!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nA fejezetben a nominális változók illeszkedésvizsgálatára és kapcsolatvizsgálatára fókuszáltunk. Ordinális változók esetén milyen próbákat használhatunk?",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Hipotézisvizsgálatok</span>"
+    ]
+  },
+  {
+    "objectID": "10-Hipotezisvizsgalatok.html#sec-hatasmeret",
+    "href": "10-Hipotezisvizsgalatok.html#sec-hatasmeret",
+    "title": "10  Hipotézisvizsgálatok",
+    "section": "10.6 Hatásméret 🤔",
+    "text": "10.6 Hatásméret 🤔\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nA {pwr} csomag cohen.ES() függvénye a klasszikus (Cohen, 1988) példákat szolgáltatja kicsi, közepes és nagy hatásméret esetén a csomagban található tesztekhez. Határozzuk meg és rendszerezzük ezeket az értékeket!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nAz előző fejezetben bemutatott hipotézisvizsgálatok egy részét lefedtük a hatásméret számításával ebben a fejezetben. Mely eljárások maradtak ki, és milyen hatásméret-számításokat használhatunk ezekhez?",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Hipotézisvizsgálatok</span>"
+    ]
+  },
+  {
+    "objectID": "10-Hipotezisvizsgalatok.html#sec-statisztikai-ero-es-mintanagysag",
+    "href": "10-Hipotezisvizsgalatok.html#sec-statisztikai-ero-es-mintanagysag",
+    "title": "10  Hipotézisvizsgálatok",
+    "section": "10.7 Statisztikai erő és mintanagyság 🤔",
+    "text": "10.7 Statisztikai erő és mintanagyság 🤔\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nA fejezetben a statisztikai erő és mintanagyság kiszámítására kizárólag a {pwr} csomag függvényeit használtuk. Milyen R-beli és R-en kívüli alternatívák léteznek még?",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Hipotézisvizsgálatok</span>"
+    ]
+  },
+  {
+    "objectID": "10-Hipotezisvizsgalatok.html#sec-alternativak-jmv-csomag",
+    "href": "10-Hipotezisvizsgalatok.html#sec-alternativak-jmv-csomag",
+    "title": "10  Hipotézisvizsgálatok",
+    "section": "10.8 Jamovi az R-ben 🤯",
+    "text": "10.8 Jamovi az R-ben 🤯\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nKeressünk a {jmv} csomaghoz hasonló példákat, olyan csomagokat, amelyek egyetlen függvényhívással komplett statisztikai elemzést végeznek. Készítsünk egy rövid összefoglalót a csomagokról és a funkcióikról!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nVégezzük el az előző fejezetekben bemutatott próbákat a {jmv} csomag segítségével! Készítsünk egy statisztikai jelentést (HTML riportot) a kapott eredményekről (lásd 11. fejezet)!\n\n\n\n\n\n\n\nCohen, J. (1988). Statistical Power Analysis for the Behavioral Sciences. Lawrence Erlbaum.\n\n\nDag, O., Dolgun, A. és Konar, N. M. (2018). onewaytests: An R Package for One-Way Tests in Independent Groups Designs. The R Journal, 10(1), 175–199. https://doi.org/10.32614/rj-2018-022",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Hipotézisvizsgálatok</span>"
+    ]
+  },
+  {
+    "objectID": "11-Publikalas.html",
+    "href": "11-Publikalas.html",
+    "title": "11  Publikáció",
+    "section": "",
+    "text": "11.1 Quarto HTML dokumentum 🙂",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Publikáció</span>"
+    ]
+  },
+  {
+    "objectID": "11-Publikalas.html#sec-quartodoc",
+    "href": "11-Publikalas.html#sec-quartodoc",
+    "title": "11  Publikáció",
+    "section": "",
+    "text": "🎯 Feladat\n\n\n\n\nHogyan állíthatjuk be a Quarto HTML dokumentum számára a fejezetet sorszámozásánál a pontra végződést, azaz az “1” és “1.1” helyet az “1.” és “1.1.” megjelenítését.\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nMilyen témákat használhatunk még a HTML dokumentumok megjelenítése során a fejezetben használt Cerulean témán kívül?\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nHol találunk részletes leírást a Markdown és a Quarto dokumentumok formázási lehetőségeiről?\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nMiért mondhatjuk, hogy a Quarto dokumentum egy fordított parancsállomány?\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nMit jelent az inline R kód futtatása a Quarto dokumentumokban, hogyan használjuk ezeket? Nézzen utána a Quarto dokumentációjában!",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Publikáció</span>"
+    ]
+  },
+  {
+    "objectID": "11-Publikalas.html#sec-quarto-hivatkozasok",
+    "href": "11-Publikalas.html#sec-quarto-hivatkozasok",
+    "title": "11  Publikáció",
+    "section": "11.2 Hivatkozások 🤔",
+    "text": "11.2 Hivatkozások 🤔\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nA korábban említett knitr::kable() + {kableExtra} pár és a {gt} csomag mellett számos további csomag is segíti a táblázatok létrehozását. Melyek ezek?\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nA {gt} csomag használatával készítse el a fejezetben használt táblázatot!\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nKészítsen egy HTML dokumentumot, amely ábrával és képpel is bemutatja a top 10 legtöbb bevételt hozó Pixar filmet. Használjuk a Pixar Box Office Varázslat oldalon található adatbázist és elemzési segítséget. A HTML dokumentum tartalmazzon hivatkozásokat az adatbázisra és a használt csomagokra, illetve magára az R-re is, továbbá a beillesztett képre és az ábrára is hivatkozzunk a szövegből. A dokumentum végén szerepeljen irodalomjegyzék is.",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Publikáció</span>"
+    ]
+  },
+  {
+    "objectID": "11-Publikalas.html#sec-quarto-mas-formatumok",
+    "href": "11-Publikalas.html#sec-quarto-mas-formatumok",
+    "title": "11  Publikáció",
+    "section": "11.3 Más Quarto formátumok 🤯",
+    "text": "11.3 Más Quarto formátumok 🤯\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nAz előző rész egyik feladata HTML dokumentum elkészítését írta elő, amely ábrával és képpel is bemutatja a top 10 legtöbb bevételt hozó Pixar filmet (forrás: Pixar Box Office Varázslat). Alakítsuk át ezt a HTML állományt:\n\n\nPDF dokumentummá,\nMS Word dokumentummá,\nHTML prezentációvá,\nPDF prezentációvá,\nPPTX prezentációvá,\nOuarto könyv formátummá.\n\n\n\n\n\n\n\n\n\n🎯 Feladat\n\n\n\n\nKészítsünk egy Ouarto könyvet a 10. fejezetben bemutatott hipotézisvizsgálatokból!",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Publikáció</span>"
+    ]
+  },
+  {
+    "objectID": "51-Irodalomjegyzek.html",
+    "href": "51-Irodalomjegyzek.html",
+    "title": "Irodalom",
+    "section": "",
+    "text": "Cohen, J. (1988). Statistical Power Analysis for the Behavioral\nSciences. Lawrence Erlbaum.\n\n\nDag, O., Dolgun, A. és Konar, N. M. (2018). onewaytests: An R Package\nfor One-Way Tests in Independent Groups Designs. The R Journal,\n10(1), 175–199. https://doi.org/10.32614/rj-2018-022",
+    "crumbs": [
+      "Irodalom"
+    ]
+  }
+]

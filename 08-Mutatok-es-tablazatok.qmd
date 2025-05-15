@@ -1,0 +1,62 @@
+# Mutatók és táblázatok {#sec-mutatok-tablazatok}
+
+```{r}
+#| results: "asis"
+#| echo: false
+source("_common.R")
+```
+
+
+## Az *Alap R* lehetőségei 🙂 {#sec-alap-r-lehetosegei}
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+1. Készítsen gyakorisági táblázatot a `survey` adattábla `Smoke` változójára!
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+2. Készítsen gyakorisági táblázatot a `survey` adattábla `Smoke` és `Sex` változójára!
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+3. Határozza meg a pulzus átlagát a `survey` adattábla `Sex` és `Smoke` változói szerint!
+:::
+
+## A *Tidyverse R* lehetőségei 🤔 {#sec-tidyverse-r-lehetosegei}
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+1. Készítsen gyakorisági táblázatot a `survey` adattábla `Smoke` változójára! Használja a *Tidyverse R* csomagjait!
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+2. Készítsen gyakorisági táblázatot a `survey` adattábla `Smoke` és `Sex` változójára! Használja a *Tidyverse R* csomagjait!
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+3. Határozza meg a pulzus átlagát a `survey` adattábla `Sex` és `Smoke` változói szerint! Használja a *Tidyverse R* csomagjait!
+:::
+
+## Haladó lehetőségek 🤯 {#sec-halado-lehetosegek}
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+1. Készítsen gyakorisági táblázatot a `survey` adattábla `Smoke` változójára! Használja a `{DescTools}`, majd a `{summarytools}` csomagot!
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+2. Készítsen gyakorisági táblázatot a `survey` adattábla `Smoke` és `Sex` változójára! Használja a `{DescTools}`, majd a `{summarytools}` csomagot!
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+3. Határozza meg a pulzus átlagát a `survey` adattábla `Sex` és `Smoke` változói szerint! Használja a `{psych}`, `{DescTools}`, majd a `{summarytools}` csomagot!
+:::

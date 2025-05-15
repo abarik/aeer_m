@@ -1,0 +1,7 @@
+.chapter-number::after {
+  content: ".";
+}
+
+.header-section-number::after {
+  content: ".";
+}

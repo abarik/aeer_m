@@ -1,0 +1,151 @@
+# Hipotézisvizsgálatok {#sec-hipotezisvizsgalatok}
+
+```{r}
+#| results: "asis"
+#| echo: false
+source("_common.R")
+```
+
+
+## Paraméteres próbák 🙂 {#sec-parameteres-probak}
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+1.  Az eddig ismertetett próbák közül az u-próba (z-próba) különböző változatai kimaradtak. A `{DescTools}` csomag `ZTest()` függvénye az egymintás, a kétmintás és a páros eseteket is képes kezelni. Adjunk példát ezekre a próbákra a `?ZTest` tanulmányozása után!
+:::
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+2.  A kétmintás t-próba és az egyszempontos varianciaelemzés több alternatívája is elérhető a `{onewaytests}` csomagban. Ezen próbák null- és ellenhipotézise ugyanúgy a várható értékekre vonatkozik. Mutassunk példát ezekre az eljárásokra @Dag2018 alapján!
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+3.  A páros vizsgálatok elemzésére a `{PairedData}` csomagot használhatjuk. Mutassunk példát azokra a kényelmi lehetőségekre, amelyek az ábrák rajzolását támogatják!
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+4.  Egyszempontos varianciaelemzéshez több módszerrel is készíthetünk magyarázó átlagábrát. Foglaljuk össze az ismert eseteket és egészítsük ki a `{PASWR2}` csomag `oneway.plots()`, a `{gplots}` csomag `plotmeans()` és a `{yarrr}` csomag `pirateplot()` függvényével.
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+5. Az egyszerű lineáris regresszió alkalmazási feltételei nem merülnek ki a reziduumok normalitásában. Ismertessük a lehetséges további feltételeket, és azok R-beli vizsgálati lehetőségeit! Használjuk a [TidyTuesday](https://github.com/rfordatascience/tidytuesday) csokoládék kakaótartalmát tartalmazó [adatbázisát](https://github.com/rfordatascience/tidytuesday/blob/master/data/2022/2022-01-18/readme.md). Mi a kakaótartalom és a csokoládé kedvelésének kapcsolata? Használjuk a beolvasásához a következő kódokat:
+
+```{r}
+#| tidy: false
+#| results: hide
+
+# install.packages("tidytuesdayR") # tidytuesdayR csomag telepítése
+# A TidyTuesday adatok letöltése a Github-ról
+tuesdata <- tidytuesdayR::tt_load('2022-01-18', )
+# a két vizsgált oszlop leválogatása; tibble-ből data frame konverzió
+chocolate <- as.data.frame(
+  tuesdata$chocolate[c("cocoa_percent", "rating")])
+# a százalékjelet is tartalmazó kakaótartalom numerikussá alakítása
+chocolate$cocoa_percent <- as.numeric(gsub("%", "", 
+                                           chocolate$cocoa_percent))
+```
+
+:::
+
+## Nemparaméteres próbák 🙂 {#sec-nemparameteres-probak}
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+1. Több nemparaméteres próbát is használja a `correct=` és az `exact=` argumentumokkal. Tekintsük át ezek lehetséges értékeit az egyes függvények esetén. Nézzünk utána, hogy ezeket milyen körülmények között érdemes használni!
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+2. Mood medián-próba esetén a `{RVAideMemoire}` csomag `mood.medtest()` függvényét használtuk, de számos alternatívája létezik az R-ben. Melyek ezek?
+:::
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+3. A Kruskal--Wallis-próba utóvizsgálatára a Dunn-próbát használtuk, de számos alternatívája létezik az R-ben. Melyek ezek?
+:::
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+4. A Friedman-próba utóvizsgálatára a Nemenyi-próbát használtuk, de számos alternatívája létezik az R-ben. Melyek ezek?
+:::
+
+
+## Normalitás vizsgálata 🙂 {#sec-normalitas-vizsgalata}
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+1. Több kutató a normalitás vizsgálatának grafikus módszerét részesíti előnyben (QQ-ábra, hisztogram) a hipotézisvizsgálatokkal szemben. Keressen bizonyítékot ennek alátámasztására!
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+2. Generáljon normális adatokat az `rnorm()` és torzított eloszlásúakat az `rexp()` és `rchisq()` függvényekkel. Vizsgálja meg, mennyire érzékeny a Shapiro–-Wilk-próba a minta méretére!
+:::
+
+## Varianciára vonatkozó próbák 🙂 {#sec-varianciara-vonatkozo-probak}
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+1. A szóráshomogenitás (homoszkedaszticitás) vizsgálatára nem csak statisztikai próbák, hanem diagnosztikus ábrák is léteznek, amelyek vizuálisan segítik a szórásazonosság feltételezésének ellenőrzését. Melyek ezek?
+:::
+
+## Valószínűség próbái 🙂 {#sec-valoszinuseg-probai}
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+1. A fejezetben használt teszteknek lehet alkalmazási feltétele. Soroljuk fel ezeket!
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+2. A fejezetben ugyanannak a hipotézisnek a vizsgálatára több próbát is bemutattunk. Foglaljuk össze, hogy melyik próbát mikor érdemes használni!
+:::
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+3. A fejezetben a nominális változók illeszkedésvizsgálatára és kapcsolatvizsgálatára fókuszáltunk. Ordinális változók esetén milyen próbákat használhatunk?
+:::
+
+## Hatásméret 🤔 {#sec-hatasmeret}
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+1. A `{pwr}` csomag `cohen.ES()` függvénye a klasszikus [@Cohen1988] példákat szolgáltatja kicsi, közepes és nagy hatásméret esetén a csomagban található tesztekhez. Határozzuk meg és rendszerezzük ezeket az értékeket!
+:::
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+2. Az előző fejezetben bemutatott hipotézisvizsgálatok egy részét lefedtük a hatásméret számításával ebben a fejezetben. Mely eljárások maradtak ki, és milyen hatásméret-számításokat használhatunk ezekhez?
+:::
+
+## Statisztikai erő és mintanagyság 🤔 {#sec-statisztikai-ero-es-mintanagysag}
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+1. A fejezetben a statisztikai erő és mintanagyság kiszámítására kizárólag a `{pwr}` csomag függvényeit használtuk. Milyen R-beli és R-en kívüli alternatívák léteznek még?
+:::
+
+
+## Jamovi az R-ben 🤯 {#sec-alternativak-jmv-csomag}
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+1. Keressünk a `{jmv}` csomaghoz hasonló példákat, olyan csomagokat, amelyek egyetlen függvényhívással komplett statisztikai elemzést végeznek. Készítsünk egy rövid összefoglalót a csomagokról és a funkcióikról!
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+2. Végezzük el az előző fejezetekben bemutatott próbákat a `{jmv}` csomag segítségével! Készítsünk egy statisztikai jelentést (HTML riportot) a kapott eredményekről (lásd [-@sec-publikacio]. fejezet)!
+:::

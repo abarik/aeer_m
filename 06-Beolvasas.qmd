@@ -1,0 +1,90 @@
+# Beolvasás {#sec-beolvasas}
+
+```{r}
+#| results: "asis"
+#| echo: false
+
+source("_common.R")
+```
+
+
+## Alapvető formátumok 🙂 {#sec-alapveto-formatumok}
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+1.  Olvassuk be a [leniency.xls](https://onlinestatbook.com/2/case_studies/data/leniency.xls) Excel állományt, állapítsuk meg hány sora és oszlopa van.
+:::
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+2.  Olvassuk be a [socsupport.csv](https://vincentarelbundock.github.io/Rdatasets/csv/DAAG/socsupport.csv) tagolt szöveges állományt, állapítsuk meg hány sora és oszlopa van.
+:::
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+3.  Olvassuk be a [tv.txt](https://onlinestatbook.com/2/case_studies/data/tv.txt) tagolt szöveges állományt, állapítsuk meg hány sora és oszlopa van.
+:::
+
+## A *Tidyverse R* és az inline beolvasás 🤔 {#sec-tidy-inline}
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+1.  Olvassuk be a *Tidyverse R* segítségével a [tv.txt](https://onlinestatbook.com/2/case_studies/data/tv.txt) tagolt szöveges állományt, állapítsuk meg hány sora és oszlopa van.
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+2.  Olvassuk be *Tidyverse R* segítségével a [socsupport.csv](https://vincentarelbundock.github.io/Rdatasets/csv/DAAG/socsupport.csv) tagolt szöveges állományt, állapítsuk meg hány sora és oszlopa van.
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+3.  Olvassuk be a *Tidyverse R* segítségével a [leniency.xls](https://onlinestatbook.com/2/case_studies/data/leniency.xls) Excel állományt, állapítsuk meg hány sora és oszlopa van.
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+4.  Rögzítsük a következő adatbázist inline módon legalább 3 módszerrel! Az [adatbázis](https://magyarnevek.hu/nevek/utonevstatisztika) a magyar utónevek gyakorisági statisztikáját tartalmazza!
+
+| ev   | helyezes | nev     | nem  | elso | masodik |
+|------|----------|---------|------|------|---------|
+| 2021 | 1        | Levente | fiú  | 1332 | 180     |
+| 2021 | 2        | Máté    | fiú  | 1314 | 242     |
+| 2021 | 3        | Dominik | fiú  | 1289 | 259     |
+| 2021 | 1        | Hanna   | lány | 1355 | 336     |
+| 2021 | 2        | Zoé     | lány | 1138 | 420     |
+| 2021 | 3        | Anna    | lány | 1133 | 500     |
+
+:::
+
+## Kiírás és más lehetőségek 🤯 {#sec-kiiras-es-mas}
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+1.  A `cat()` függvénnyel a `dput()`-hoz hasonlóan szöveges állományba írhatjuk egy karakteres, numerikus vagy logikai vektor értékét. Mindkét függvénnyel végezzük el a kiírást, és vessük össze a kapott szöveges állományok tartalmát!
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+2.  A [Kaggle egyik adatbázisában](https://www.kaggle.com/skateddu/metacritic-games-stats-20112019) 4000 videójáték értékelése található. Töltsük le a CSV adatállományt, és nyissuk meg. Keressük meg az [R-bloggers](https://www.r-bloggers.com) oldalon az adatállományhoz kapcsolódó cikket, és próbáljunk ki néhány elemző parancsot. A blogger melyik csomag, melyik függvényével végezte a beolvasást?
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+3.  Keressük fel és tanulmányozzuk a [Great R packages for data import, wrangling and visualization](https://www.computerworld.com/article/2921176/great-r-packages-for-data-import-wrangling-visualization.html) oldalt! A bevezetésben lefektetett alapelvek közül melyiket erősíti meg ez az oldal?
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+4.  Töltsünk le 10 érdekesnek tűnő adatállományt a [TidyTuesday - A weekly social data project in R](https://github.com/rfordatascience/tidytuesday) oldalról, és nyissuk meg őket!
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+5.  Töltsük be az `{Ecdat}` csomagot, ha szükséges telepítsük! Vizsgáljuk meg az `{Ecdat}` csomag tartalmát, nevezzünk meg legalább 5 objektumot ebből a csomagból! Olvassuk be `d2` néven az `{Ecdat}` csomag `Diamond` adattábláját! Kérjünk leírást erről az adattábláról!
+:::

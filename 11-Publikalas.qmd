@@ -1,0 +1,79 @@
+# Publikáció {#sec-publikacio}
+
+```{r}
+#| results: "asis"
+#| echo: false
+source("_common.R")
+```
+
+
+## Quarto HTML dokumentum 🙂 {#sec-quartodoc}
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+1.  Hogyan állíthatjuk be a *Quarto* HTML dokumentum számára a fejezetet sorszámozásánál a pontra végződést, azaz az "1" és "1.1" helyet az "1." és "1.1." megjelenítését.
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+2.  Milyen témákat használhatunk még a HTML dokumentumok megjelenítése során a fejezetben használt `Cerulean` témán kívül?
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+3. Hol találunk részletes leírást a *Markdown* és a *Quarto* dokumentumok formázási lehetőségeiről?
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+4. Miért mondhatjuk, hogy a *Quarto* dokumentum egy fordított parancsállomány?
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+5. Mit jelent az inline R kód futtatása a *Quarto* dokumentumokban, hogyan használjuk ezeket? Nézzen utána a *Quarto* dokumentációjában!
+:::
+
+
+## Hivatkozások 🤔 {#sec-quarto-hivatkozasok}
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+1.  A korábban említett `knitr::kable()` + `{kableExtra}` pár és a `{gt}` csomag mellett számos további csomag is segíti a táblázatok létrehozását. Melyek ezek?
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+2.  A `{gt}` csomag használatával készítse el a fejezetben használt táblázatot!
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+3. Készítsen egy HTML dokumentumot, amely ábrával és képpel is bemutatja a top 10 legtöbb bevételt hozó Pixar filmet. Használjuk a [Pixar Box Office Varázslat](https://www.kaggle.com/code/aradhanahirapara/pixar-s-box-office-magic-analyzing-28-years-of-an/notebook) oldalon található adatbázist és elemzési segítséget. A HTML dokumentum tartalmazzon hivatkozásokat az adatbázisra és a használt csomagokra, illetve magára az R-re is, továbbá a beillesztett képre és az ábrára is hivatkozzunk a szövegből. A dokumentum végén szerepeljen irodalomjegyzék is.
+:::
+
+
+
+
+## Más Quarto formátumok 🤯 {#sec-quarto-mas-formatumok}
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+1.  Az előző rész egyik feladata HTML dokumentum elkészítését írta elő, amely ábrával és képpel is bemutatja a top 10 legtöbb bevételt hozó Pixar filmet (forrás: [Pixar Box Office Varázslat](https://www.kaggle.com/code/aradhanahirapara/pixar-s-box-office-magic-analyzing-28-years-of-an/notebook)). Alakítsuk át ezt a HTML állományt:
+
+- PDF dokumentummá,
+- MS Word dokumentummá,
+- HTML prezentációvá,
+- PDF prezentációvá,
+- PPTX prezentációvá,
+- *Ouarto* könyv formátummá.
+:::
+
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+2. Készítsünk egy *Ouarto* könyvet a [-@sec-hipotezisvizsgalatok]. fejezetben bemutatott hipotézisvizsgálatokból!
+:::

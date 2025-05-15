@@ -1,0 +1,67 @@
+# Munka az R-ben {#sec-munka-az-r-ben}
+
+```{r}
+#| results: "asis"
+#| echo: false
+source("_common.R")
+```
+
+
+## Az *RStudio* használata 🙂 {#sec-az-rstudio-hasznalata}
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+1.  Bizonyosodjunk meg róla, hogy az alapvető szövegszerkesztési ismeretek birtokában vagyunk. Ismerjük az `Insert` billentyű funkcióját? Találjunk legalább 8 módszert, amely kizárólag a billentyű segítségével mozgatja a szövegkurzort! A szövegkijelölésnek milyen billentyűparancsait ismerjük? Milyen karaktertörlési lehetőségeket ismerünk? Ismerjük mindhárom vágóasztal-művelet billentyűparancsát?
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+2.  Az *RStudio* mellett milyen más integrált fejlesztőeszközök léteznek az R-hez?
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+3.  Az `Appearance` menüpont `Editor theme` beállításával változtassunk az *RStudio* színösszeállításán. Keressük meg a legjobban hozzánk illőt! Vegyük figyelembe, hogy hosszútávon a minél sötétebb háttér a jó választás.
+:::
+
+## Segítség az R használatához 🤔 {#sec-segitseg-az-r-hez}  
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+1.  Keressünk magyar nyelvű leírásokat az R-hez!
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+2.  A közösségi médiában melyek az R legfontosabb fórumai?
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+3.  Hogyan indíthatjuk el egy csomag beépített súgóját? Ismerjük meg így a `{fun}` csomagot!
+:::
+
+
+## Az *Alap R* használata 🤯 {#sec-alap-r-hasznalata}
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+1.  Foglaljuk össze az R használati módjait! Soroljuk fel mind a négy lehetőséget!
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+2.  Hasonlítsuk össze a parancsállományok használatát *RGui*-ban és *RStudio*-ban!
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+3.  Hasonlítsuk össze a parancsállományok és a *Quarto* / *R Markdown* használatát *R Commander*-ben és *RStudio*-ban!
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+4.  Töltsük le és telepítsük az ingyenesen elérhető *jamovi* és a *JASP* statisztikai programokat, majd nyissuk meg a beépített adatbázisait, és végezzünk néhány egyszerűbb elemzést! Ha elakadunk, keressünk videótutoriált az eszközök használatáról. Melyik eszköz tetszik jobban? Miben hasonlítanak és miben térnek el?
+:::

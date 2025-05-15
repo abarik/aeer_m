@@ -1,0 +1,60 @@
+# Itt kezdődik {#sec-itt-kezdodik}
+
+```{r}
+#| results: "asis"
+#| echo: false
+
+source("_common.R")
+```
+
+## Elindulás 🙂 {#sec-elindulas}
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+
+1.  Milyen online vagy nyomtat könyvek segítik az R elsajátítását? Próbáljuk összegyűjteni a magyar nyelvű könyveket is!
+:::
+
+Az R könyvekkel kapcsolatban könnyen az lehet az érzésünk, hogy *túl sok a könyv, és túl kevés az idő*. Valóban tengernyi R könyv vásárolható meg, melyek többsége angol nyelvű. Elegendő a Springer [Use R!](https://www.springer.com/series/6991) könyvsorozatára gondolni, amely önmagában több mint 80 címet tartalmaz. Az Amazon-ról elérhető, 2020. januárja után [megjelent](https://www.amazon.com/s?k=r+statistics&i=stripbooks&rh=n%3A5&s=relevanceexprank&Adv-Srch-Books-Submit.x=39&Adv-Srch-Books-Submit.y=5&field-datemod=1&field-dateop=After&field-dateyear=2020&unfiltered=1&ref=sr_adv_b) könyvek száma is túl van a háromszázon.
+
+Különösen értékesek lehetnek az online elérhető könyvek. Az idegen nyelvű könyvek tematikus gyűjteménye a [Big Book of R](https://www.bigbookofr.com/), míg az R erőforrásokról [saját listát](https://abarik.github.io/roforrasok/) is karbantartok.
+
+A magyar nyelvű könyvek közül külön is felsorolunk néhányat:
+
+-   Reiczigel Jenő, Harnos Andrea, Solymosi Norbert (2021). *Biostatisztika nem statisztikusoknak*. Pars Kft., Nagykovácsi.
+-   Dinya Elek, Solymosi Norbert (2016). *Biometria a klinikumban 2. Feladatok megoldása R-környezetben.* Medicina Kiadó.
+-   Münnich Ákos, Nagy Ágnes, Abari Kálmán. *Többváltozós statisztika pszichológus hallgatók számára.* Bölcsész Konzorcium, Debrecen, 2006. (http://psycho.unideb.hu/statisztika) ISBN 963 9704 04 0
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+2.  Térképezzük fel az online videókurzusokat is az R tanulásához!
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+3.  Az [-@exm-bevezeto-1]. példa (*Két tanítási módszer összehasonlítása*) hipotézisvizsgálatának eredménye alapján adjunk szöveges értékelést!
+:::
+## A könyv felépítése 🤔 {#sec-konyv-felepitese}
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+1.  Az adatfeldolgozás 4 lépése a következő: (1) adatok beolvasása, (2) adatok előkészítése elemzésre, (3) adatok elemzése és (4) az eredmények publikálása. A könyv mely fejezetei tartoznak az adatfeldolgozás fenti lépéseihez?
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+2.  Az R-rel való munka általunk javasolt módja: *RStudio*-ban, projektmódban, R vagy *Quarto* állományokat szerkesztünk és hajtunk végre. Mely fejezetekben találunk hasznos információkat az R ezen használatával kapcsolatban?
+:::
+
+## Próbák listája 🤯 {#sec-probak-listaja}
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+1.  Minden statisztikai próba esetében négy dolgot érdemes tudni: (1) a statisztikai próba neve, (2) null- és ellenhipotézise, (3) alkalmazási feltételei, és (4) a próba végrehajtásának módja valamely statisztikai programcsomagban. A [-@sec-hipotezisvizsgalatok]. fejezetben a statisztikai próbák végrehajtását természetesen R-beli eszközökkel mutatjuk be. Ismerjük a fenti táblázatokban megnevezett próbák null- és ellenhipotézisét, valamint az alkalmazási feltételeit? Próbáljuk ezeket felidézni! Hol találunk ezekről információt?
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+2.  Mely próbák maradtak ki ebből a könyvből? Hol találunk ezek R-beli végrehajtására példát?
+:::

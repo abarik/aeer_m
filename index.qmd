@@ -1,0 +1,6 @@
+# Előszó {.unnumbered}
+
+Ez a megoldásgyűjtemény az "Adatkezelés és egyváltozós elemzések R-ben"-ben c. könyvben megjelenő feladatok megoldásait tartalmazza. A könyv célja, hogy bemutassa az R programozási nyelvet és a statisztikai elemzésekhez szükséges alapvető ismereteket.
+
+
+

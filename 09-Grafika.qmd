@@ -1,0 +1,82 @@
+# Modern grafika {#sec-modern grafika}
+
+```{r}
+#| results: "asis"
+#| echo: false
+source("_common.R")
+```
+
+
+
+## A ggplot2 alapjai 🙂 {#sec-ggplot2-alapjai}
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+1.  A [-@exm-kerdoiv-1] példában 237 Ausztrál egyetemista adata szerepel. A `kerdoiv.xlsx`-ből elérhető adatokban megtalálható a `Fold` faktor és az `Age` numerikus változó. Megkérték az egyetemistákat, hogy kulcsolják össze a kezüket, majd lejegyezték a felül lévő kart. Így a `Fold` lehetséges értékei `"R on L"`, `"L on R"`, `"Neither"`. Az `Age` változó az egyetemisták életkorát tartalmazza évben kifejezve. Vizsgáljuk meg mindkét változó eloszlását a szokásos módon. A faktor változót oszlopdiagrammal, a numerikus változót egydimenziós pontdiagrammal, dobozdiagrammal és hisztogrammal is.
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+2.  Mentsük el háttértárra PNG állományok formájában az előző feladat négy ábráját!
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+3.  Az 1. feladatban szereplő két változó (`Fold` és `Age`) eloszlását vizsgáljuk meg nemenként is! Továbbra is használjunk oszlopdiagramot, illetve egydimenziós pontdiagramot, dobozdiagramot és hisztogramot.
+:::
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+4.  Vizsgáljuk meg több módszerrel is, hogy az `Age` változó hisztogramjában milyen széles osztályintervallumokkal lenne érdemes dolgozni. Hívjuk segítségül az *Alap R* `hist()` függvényét.
+:::
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+5. Egyetlen ábrán jelenítsünk meg 3 db normális eloszláshoz tartozó sűrűségfüggvényt, melyek paraméterei: $\mu_1=1, \sigma_1=2$; $\mu_2=1, \sigma_2=3$; $\mu_3=2, \sigma_3=1$.
+:::
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+6. Mutassuk be a standard normális eloszlás és a t eloszlás kapcsolatát! Egy ábrán jelenítsük meg a standard normális eloszlás sűrűségfüggvényét és az 5, 10, 15, 20 és 25 szabadsági fokú t eloszlás sűrűségfüggvényét!
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+7. Jelenítsük meg az $n=50, p=1/3$ paraméterű binomiális eloszlás eloszlását bemutató vonalas ábrát!
+:::
+
+## Számítások az ábrán 🤔 {#sec-szamitasok-abran}
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+1.  A [-@exm-kerdoiv-1] példában 237 Ausztrál egyetemista adata szerepel. Olvassuk be a `kerdoiv.xlsx` állományt, majd hasonlítsuk össze az életkort tartalmazó `Age` változó eloszlását a normális eloszlással. Használjunk hisztogramot és simított hisztogramot is. Próbáljuk egyetlen ábrán elvégezni az összehasonlítást.
+:::
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+2.  A [-@exm-kerdoiv-1] példában a nem (`Sex`) és a kezesség (`W.Hnd`) faktorok kapcsolata 4 fajta kereszttáblával is vizsgálható: (1) gyakorisági, (2) teljes kereszttáblára vonatkozó százalékos relatív gyakorisági, (3) soronként vett százalékos relatív gyakorisági és (4) oszloponként vett százalékos relatív gyakorisági táblázattal. Mind a négy kétdimenziós gyakorisági táblázatnak rajzoljuk meg az oszlopdiagram megfelelőjét. Az egyes oszlopok feliratként a gyakorisági és a százalékos relatív gyakorisági értékeket is tartalmazzák. A soronként vagy oszloponként vett relatív gyakorisági táblázatokból készült ábrák létrehozásához [használjuk](https://ggobi.github.io/ggally/articles/ggally_stats.html) a `{GGally}` csomag `stat_prop()` függvényét.
+:::
+
+## Ábrák testreszabása 🤯 {#sec-abrak-testreszabasa}
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+1.  A [-@fig-szinpaletta-kat-01]. ábrán már használtuk az `{RColorBrewer}` csomag színpalettáját kategorikus változó esetén. Próbáljuk ki magunk is a [-@fig-rcolorbrewer-01]. ábrán felsorolt palettaneveket "Set3"-tól "Accent"-ig!
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+2.  A standard normális eloszlás és az 5, 10, 15 és 20 szabadsági fokú t-eloszás sűrűségfüggvényét jelenítsük meg egy-egy ábrán! A görbék megjelenítéséhez használjuk a `stat_function()` függvényt!
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+3. Mutassuk be az R hagyományos grafikus rendszerét!
+:::

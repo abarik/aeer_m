@@ -1,0 +1,49 @@
+# Az R telepítése {#sec-az-r-telepitese}
+
+```{r}
+#| results: "asis"
+#| echo: false
+source("_common.R")
+```
+
+
+## A fő komponensek telepítése 🙂 {#sec-fo-komponensek}
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+1.  Melyik az R legfrissebb változata, és milyen újdonságokat tartalmaz az előző változathoz képest?
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+2.  Melyik az *RStudio* legfrissebb változata, és milyen újdonságokat tartalmaz az előző változathoz képest?
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+3.  Hogyan deríthető ki, hogy egy csomagban (például a `{MASS}`) csomagban, hány adatobjektum, és hány függvény található?
+:::
+
+## A *Tidyverse R* telepítése 🤔 {#sec-tidyverse-r-telepitese}
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+1.  Keressünk rá a *Tidyverse R* csomagjaira, és próbáljuk kideríteni az egyes csomagok fő célját, alkalmazási területeit!
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+2.  Derítsük ki, hogy az *R Core Team* vagy Hadley Wickham több R csomag szerzője!
+:::
+
+## Az R frissítése 🤯 {#sec-r-frissitese}
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+1.  Az *RStudio* `Tools/Check for Package Updates` menüpontjával tájékozódjunk a telepített csomagjaink állapotáról. Végezzük el a szükséges frissítéseket! Mit tegyünk, ha nem sikerül valamelyik csomag telepítése?
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+2.  Ismerjük meg a telepített csomagjaink számát és forrását (CRAN vagy Bioconductor vagy GitHub)!
+:::

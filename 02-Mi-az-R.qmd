@@ -1,0 +1,77 @@
+# Mi az R? {#sec-mi-az-r}
+
+```{r}
+#| results: "asis"
+#| echo: false
+source("_common.R")
+```
+
+
+## Az R bemutatása 🙂 {#sec-az-r-bemutatasa}
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+1.  Keressünk weboldalakat, amelyek az R előnyeit és hátrányait listázzák!
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+2.  Keressük meg, hogy az R optimális futtatásához, milyen hardver követelmények szükségesek!
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+3.  Nézzünk utána, hogy ma kb. hány csomag érhető el az R-hez? Keressünk ábrát, amely bemutatja, hogy az évek során hány csomag volt elérhető az R-hez?
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+4.  Hol áll az R népszerűsége a többi programozási nyelvhez, illetve statisztikai programcsomaghoz képest?
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+5.  Milyen ingyenesen elérhető, grafikus felhasználói felülettel rendelkező statisztikai programcsomagok építenek az R-re?
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+6.  Említettük, hogy az adatelemezési munka nem igényli az R programozói fokú ismeretét, de soroljunk fel néhány könyvet, amelyből az R programozása is megtanulható!
+:::
+
+## A modern R 🤔 {#sec-modern-r}
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+1.  Ki Hadley Wickham?
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+2.  Mikor történt az egyik legjobb dolog az R-rel?
+:::
+
+## Múlt és jelen 🤯 {#sec-mult-es-jelen}
+
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+1.  Keressünk olyan statisztikai jellegű témaköröket, amelyekben az R segítségünkre lehet?
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+2.  Keressünk olyan nem-statisztikai jellegű témaköröket, amelyekben az R segítségünkre lehet?
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+3.  Nézzünk át néhány online elérhető R könyvet, és hasonlítsuk össze az R alaptudás egyes elemeivel! Melyek az átfedő részek, és hol vannak különbségek?
+:::
+
+::: {.callout-warning icon="false"}
+## `r emoji("dart")` Feladat
+4.  Melyek a fontosabb lépcsőfokok az R fejlődősében?
+:::

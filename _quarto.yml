@@ -1,0 +1,44 @@
+project:
+  type: book
+  output-dir: docs
+from: markdown+emoji
+  
+lang: hu
+language: hungarian.yml  
+
+bibliography: aeer.bib
+biblio-style: apalike
+csl: apahun
+
+book:
+  title: "Megoldások az aeer-hez"
+  subtitle: "Megoldások az \"Adatkezelés és egyváltozós elemzések R-ben\" c. könyvhöz"
+  author: "Abari Kálmán"
+  date: today
+  chapters:
+    - index.qmd
+    - 01-Itt-kezdodik.qmd
+    - 02-Mi-az-R.qmd
+    - 03-Az-R-telepitese.qmd
+    - 04-Munka-az-R-ben.qmd
+    - 05-Az-R-nyelv.qmd
+    - 06-Beolvasas.qmd
+    - 07-Adatmanipulacio.qmd
+    - 08-Mutatok-es-tablazatok.qmd
+    - 09-Grafika.qmd
+    - 10-Hipotezisvizsgalatok.qmd
+    - 11-Publikalas.qmd
+    - 51-Irodalomjegyzek.qmd
+  cover-image: cover.png
+  search: true
+
+
+format:
+  html:
+    theme: cosmo
+    css: css/style.css
+  pdf:
+    documentclass: scrreprt
+
+
+
